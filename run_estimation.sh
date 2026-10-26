@@ -32,6 +32,14 @@
 # Extra arguments for project_to_pose.sh (e.g. --additional-config) can be put
 # in POSE_ARGS below.
 
+# This script submits the jobs itself; as a job of its own it would run with
+# the cluster's default resources (and its jobs would inherit its SLURM_*
+# settings).
+if [ -n "$SLURM_JOB_ID" ]; then
+	echo "Run $0 directly on the login node, not with sbatch: it submits the jobs itself" >&2
+	exit 1
+fi
+
 # Run from this script's directory, so the relative paths below (and the
 # ../project_dir_paths.csv default in project_to_pose.sh) resolve.
 cd "$(dirname "$0")" || exit 1
