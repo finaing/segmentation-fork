@@ -1,19 +1,23 @@
 #!/usr/bin/bash -l
 #
-# Submits one project_to_pose.sh job per project.
+# Submits one project_to_pose.sh job per project, or with --segment one
+# project_to_segments.sh job per project.
 #
 # Usage:
-#   ./run_estimation.sh [--cpus N] [--mem MEM] [--time TIME] [PROJECT...]
+#   ./run_estimation.sh [--segment] [--cpus N] [--mem MEM] [--time TIME] [PROJECT...]
 #
-#   --cpus   CPUs per job, also used as project_to_pose.sh --workers (default: 2)
-#   --mem    memory per job, as for sbatch --mem (default: 120G)
-#   --time   time limit per job, as for sbatch --time (default: 48:00:00)
-#   PROJECT  project name as in the "project" column of PROJECTS_CSV (quote
-#            names with spaces, e.g. "Noah David"). Default: all projects
-#            in PROJECTS_CSV.
+#   --segment  segment the projects' existing pose files into EAFs
+#              (project_to_segments.sh) instead of estimating poses
+#   --cpus     CPUs per job, also used as project_to_pose.sh --workers (default: 2)
+#   --mem      memory per job, as for sbatch --mem (default: 40G)
+#   --time     time limit per job, as for sbatch --time (default: 12:00:00)
+#   PROJECT    project name as in the "project" column of PROJECTS_CSV (quote
+#              names with spaces, e.g. "Noah David"). Default: all projects
+#              in PROJECTS_CSV.
 #
-# Example:
+# Examples:
 #   ./run_estimation.sh --cpus 8 --mem 200G --time 72:00:00 SMILE2 "Noah David"
+#   ./run_estimation.sh --segment --mem 16G SMILE2 "Noah David"
 #
 # Extra arguments for project_to_pose.sh (e.g. --additional-config) can be put
 # in POSE_ARGS below.
@@ -32,19 +36,21 @@ PROJECTS_CSV="../project_dir_paths.csv"
 POSE_ARGS=()
 
 usage() {
-	echo "Usage: $0 [--cpus N] [--mem MEM] [--time TIME] [PROJECT...]" >&2
+	echo "Usage: $0 [--segment] [--cpus N] [--mem MEM] [--time TIME] [PROJECT...]" >&2
 	exit 1
 }
 
 cpus=2
 mem=40G
 time=12:00:00
+segment=""
 projects=()
 while [ $# -gt 0 ]; do
 	case "$1" in
 		--cpus) [ $# -ge 2 ] || usage; cpus="$2"; shift 2 ;;
 		--mem) [ $# -ge 2 ] || usage; mem="$2"; shift 2 ;;
 		--time) [ $# -ge 2 ] || usage; time="$2"; shift 2 ;;
+		--segment) segment=1; shift ;;
 		-*) usage ;;
 		*) projects+=("$1"); shift ;;
 	esac
@@ -58,8 +64,14 @@ if [ ${#projects[@]} -eq 0 ]; then
 fi
 
 for project in "${projects[@]}"; do
-	sbatch --job-name="${project// /_}_videos_to_poses" \
-		--cpus-per-task="$cpus" --mem="$mem" --time="$time" \
-		project_to_pose.sh --project "$project" --csv "$PROJECTS_CSV" \
-		--workers "$cpus" "${POSE_ARGS[@]}"
+	if [ -n "$segment" ]; then
+		sbatch --job-name="${project// /_}_poses_to_segments" \
+			--cpus-per-task="$cpus" --mem="$mem" --time="$time" \
+			project_to_segments.sh --project "$project" --csv "$PROJECTS_CSV"
+	else
+		sbatch --job-name="${project// /_}_videos_to_poses" \
+			--cpus-per-task="$cpus" --mem="$mem" --time="$time" \
+			project_to_pose.sh --project "$project" --csv "$PROJECTS_CSV" \
+			--workers "$cpus" "${POSE_ARGS[@]}"
+	fi
 done
