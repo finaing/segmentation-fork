@@ -6,7 +6,7 @@
 # resubmit one that ran out of time).
 #
 # Usage:
-#   ./run_estimation.sh [--segment | --segment-only] [--cpus N] [--mem MEM] [--time TIME]
+#   bash run_estimation.sh [--segment | --segment-only] [--cpus N] [--mem MEM] [--time TIME]
 #       [--seg-cpus N] [--seg-mem MEM] [--seg-time TIME] [PROJECT...]
 #
 #   --segment       also segment the pose files into EAFs once pose estimation
@@ -25,20 +25,13 @@
 #                   in PROJECTS_CSV except those in EXCLUDED_PROJECTS below.
 #
 # Examples:
-#   ./run_estimation.sh --cpus 8 --mem 200G --time 72:00:00 SMILE2 "Noah David"
-#   ./run_estimation.sh --segment --cpus 8 --mem 32G --time 72:00:00 #       --seg-mem 64G --seg-time 12:00:00 SMILE2
-#   ./run_estimation.sh --segment-only --seg-mem 16G SMILE2 "Noah David"
+#   bash run_estimation.sh --cpus 8 --mem 200G --time 72:00:00 SMILE2 "Noah David"
+#   bash run_estimation.sh --segment --cpus 8 --mem 32G --time 72:00:00 \
+#       --seg-mem 64G --seg-time 12:00:00 SMILE2
+#   bash run_estimation.sh --segment-only --seg-mem 16G SMILE2 "Noah David"
 #
 # Extra arguments for project_to_pose.sh (e.g. --additional-config) can be put
 # in POSE_ARGS below.
-
-# This script submits the jobs itself; as a job of its own it would run with
-# the cluster's default resources (and its jobs would inherit its SLURM_*
-# settings).
-if [ -n "$SLURM_JOB_ID" ]; then
-	echo "Run $0 directly on the login node, not with sbatch: it submits the jobs itself" >&2
-	exit 1
-fi
 
 # Run from this script's directory, so the relative paths below (and the
 # ../project_dir_paths.csv default in project_to_pose.sh) resolve.
