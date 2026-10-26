@@ -10,6 +10,12 @@
 # project is read from PROJECTS_CSV. Videos that already have a pose file are
 # skipped, so a job that ran out of time can just be resubmitted.
 #
+# Some projects only get poses for some camera perspectives (see the case
+# statement before the conversion loop): SMILE2 only *_front, InterGaze only
+# *_Camera_2 and *_Camera_3 (each its own pose file), searched in subdirectories
+# too, and SMILE, SMILE_2018 and SRT-2 only *_S1, using *_S1_aligned instead
+# where a recording has one.
+#
 # Videos are converted one at a time with video_to_pose rather than with
 # videos_to_poses, which can't write to a separate pose dir, only finds
 # lowercase suffixes (.mp4, not .MP4) and asks for input on name collisions.
@@ -82,6 +88,36 @@ if [ ! -d "$video_dir" ]; then
 fi
 mkdir -p "$pose_dir" || exit 1
 
+# Which videos get poses: depth limits the search to share_path itself unless a
+# project keeps its videos in subdirectories, select narrows it to camera
+# perspectives. Pose files are named after the video, so each perspective gets
+# its own. With prefer_aligned, a video that also has an _aligned version
+# (X_S1.mp4 next to X_S1_aligned.mp4) is skipped in favour of that version.
+depth=(-maxdepth 1)
+select=()
+prefer_aligned=""
+case "$project" in
+	SMILE2) select=(-iname '*_front.*') ;;
+	InterGaze)
+		depth=()
+		select=(\( -iname '*_Camera_2.*' -o -iname '*_Camera_3.*' \))
+		;;
+	SMILE|SMILE_2018|SRT-2)
+		select=(\( -iname '*_S1.*' -o -iname '*_S1_aligned.*' \))
+		prefer_aligned=1
+		;;
+esac
+
+# find_videos TYPE: prints the selected videos, NUL-separated and sorted, that
+# are (or link to) regular files (TYPE f) or are broken symlinks (TYPE l).
+# -xtype, not -type: the videos are mostly symlinks, and -xtype f matches both
+# regular files and symlinks to them.
+find_videos() {
+	find "$video_dir" "${depth[@]}" -path "$pose_dir" -prune -o \
+		-xtype "$1" \( -iname '*.mp4' -o -iname '*.mov' \) "${select[@]}" -print0 |
+		LC_ALL=C sort -z
+}
+
 module load miniforge3
 source activate segamega || { echo "Could not activate conda env segamega" >&2; exit 1; }
 
@@ -90,11 +126,18 @@ echo "video_to_pose ${pose_args[*]}"
 done_count=0
 skip_count=0
 fail_count=0
+aligned_count=0
 # Time spent in video_to_pose on successful conversions, for the average
 convert_seconds=0
 start_time=$(date +%s)
 while IFS= read -r -d '' video; do
 	name=$(basename "$video")
+	if [ -n "$prefer_aligned" ] && [ -n "$(find "$(dirname "$video")" -maxdepth 1 -xtype f \
+		\( -iname "${name%.*}_aligned.mp4" -o -iname "${name%.*}_aligned.mov" \) -print -quit)" ]; then
+		echo "Using _aligned version instead of $name"
+		aligned_count=$((aligned_count + 1))
+		continue
+	fi
 	pose="$pose_dir/${name%.*}.pose"
 	if [ -s "$pose" ]; then
 		skip_count=$((skip_count + 1))
@@ -113,18 +156,20 @@ while IFS= read -r -d '' video; do
 		rm -f "$pose.tmp"
 		fail_count=$((fail_count + 1))
 	fi
-# -xtype, not -type: the videos are mostly symlinks, and -xtype f matches both
-# regular files and symlinks to them. Pose files are named after the link.
-done < <(find "$video_dir" -maxdepth 1 -xtype f \( -iname '*.mp4' -o -iname '*.mov' \) -print0 | LC_ALL=C sort -z)
+# Pose files are named after the link, not its target
+done < <(find_videos f)
 
 # Symlinks whose target is missing (-xtype l) can't be converted
 broken_count=0
 while IFS= read -r -d '' video; do
 	echo "BROKEN LINK: $video -> $(readlink "$video")" >&2
 	broken_count=$((broken_count + 1))
-done < <(find "$video_dir" -maxdepth 1 -xtype l \( -iname '*.mp4' -o -iname '*.mov' \) -print0 | LC_ALL=C sort -z)
+done < <(find_videos l)
 
 echo "$project: $done_count converted, $skip_count already done, $fail_count failed, $broken_count broken links"
+if [ -n "$prefer_aligned" ]; then
+	echo "$aligned_count videos skipped for their _aligned version"
+fi
 echo "Total time: $(hms $(($(date +%s) - start_time)))"
 if [ "$done_count" -gt 0 ]; then
 	echo "Average per converted video: $(hms $((convert_seconds / done_count)))"

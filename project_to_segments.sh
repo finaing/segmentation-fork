@@ -9,7 +9,8 @@
 # sentences with pose_to_segments, writing one ELAN file per pose file to
 # <share_path>/pose/auto_segmented/<name>.eaf. share_path per project is read
 # from PROJECTS_CSV. Each EAF links the pose file and, if found, the video it
-# was estimated from (<share_path>/<name>.mp4 or .mov, any case). Pose files
+# was estimated from (<name>.mp4 or .mov, any case, in share_path or a
+# subdirectory). Pose files
 # that already have an EAF are skipped, so a job that ran out of time can just
 # be resubmitted.
 #
@@ -90,8 +91,11 @@ while IFS= read -r -d '' pose; do
 		continue
 	fi
 
-	# The video the pose was estimated from (pose files are named after it)
-	video=$(find "$video_dir" -maxdepth 1 -xtype f \( -iname "$name.mp4" -o -iname "$name.mov" \) -print -quit)
+	# The video the pose was estimated from (pose files are named after it).
+	# Searched in subdirectories too, as project_to_pose.sh does for some
+	# projects (InterGaze).
+	video=$(find "$video_dir" -path "$pose_dir" -prune -o \
+		-xtype f \( -iname "$name.mp4" -o -iname "$name.mov" \) -print -quit)
 	video_args=()
 	if [ -n "$video" ]; then
 		video_args=(--video "$video")
