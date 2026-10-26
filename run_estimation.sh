@@ -22,6 +22,9 @@
 # ../project_dir_paths.csv default in project_to_pose.sh) resolve.
 cd "$(dirname "$0")" || exit 1
 
+module load miniforge3
+source activate spoter-pose
+
 PROJECTS_CSV="../project_dir_paths.csv"
 POSE_ARGS=()
 
