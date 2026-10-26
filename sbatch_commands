@@ -42,13 +42,13 @@ one long SMILE2 file first and adjust.
 ├────────────────────┼─────────┼──────────────┼───────────┼──────────────────────────────────────────────────────────────────────────┼───────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ SRT-1              │     305 │      0:34:54 │      0:29 │ ./run_estimation.sh --cpus 8 --mem 16G --time 2:00:00 SRT-1              │      0:31 │ ./run_estimation.sh --segment --cpus 8 --mem 16G --time 2:00:00 --seg-mem 16G --seg-time 2:00:00 SRT-1              │
 ├────────────────────┼─────────┼──────────────┼───────────┼──────────────────────────────────────────────────────────────────────────┼───────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ SMILE-Modellvideos │ 206 (3) │      0:12:53 │      0:11 │ ./run_estimation.sh --cpus 8 --mem 16G --time 8:00:00 SMILE-Modellvideos │      0:21 │ ./run_estimation.sh --segment --cpus 8 --mem 16G --time 8:00:00 --seg-mem 16G --seg-time 8:00:00 SMILE-Modellvideos │
+│ SMILE-Modellvideos │ 205 (3) │      0:12:53 │      0:22 │ ./run_estimation.sh --cpus 8 --mem 16G --time 1:00:00 SMILE-Modellvideos │      0:21 │ ./run_estimation.sh --segment --cpus 8 --mem 16G --time 1:00:00 --seg-mem 16G --seg-time 1:00:00 SMILE-Modellvideos │
 ├────────────────────┼─────────┼──────────────┼───────────┼──────────────────────────────────────────────────────────────────────────┼───────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ SRT-1-Modellvideos │      39 │      0:04:50 │      0:04 │ ./run_estimation.sh --cpus 8 --mem 16G --time 1:00:00 SRT-1-Modellvideos │      0:04 │ ./run_estimation.sh --segment --cpus 8 --mem 16G --time 1:00:00 --seg-mem 16G --seg-time 1:00:00 SRT-1-Modellvideos │
 ├────────────────────┼─────────┼──────────────┼───────────┼──────────────────────────────────────────────────────────────────────────┼───────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ SRT-2-Modellvideos │      13 │      0:01:39 │      0:01 │ ./run_estimation.sh --cpus 8 --mem 16G --time 1:00:00 SRT-2-Modellvideos │      0:01 │ ./run_estimation.sh --segment --cpus 8 --mem 16G --time 1:00:00 --seg-mem 16G --seg-time 1:00:00 SRT-2-Modellvideos │
 ├────────────────────┼─────────┼──────────────┼───────────┼──────────────────────────────────────────────────────────────────────────┼───────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ Total              │    1177 │    109:22:54 │     91:59 │                                                                          │      1:59 │                                                                                                                     │
+│ Total              │    1176 │    109:22:54 │     92:10 │                                                                          │      1:59 │                                                                                                                     │
 └────────────────────┴─────────┴──────────────┴───────────┴──────────────────────────────────────────────────────────────────────────┴───────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 
 
@@ -65,9 +65,11 @@ in output_stats.csv, so they are left out.
 (2) Stufen-CDs_Texte has 62 videos for 29 transcripts. The time assumes they
     are parts of the same recordings, so the total length stays the same.
 
-(3) SMILE-Modellvideos currently processes all 1698 videos, including the
-    downscaled copies (_160x90 ... _960x540). Its requested times assume about
-    6.3 s per pose file and 6.1 s per segmentation, as in the two test runs. Once the copies are excluded, 1 hour is enough for both.
+(3) SMILE-Modellvideos has 205 recordings for its 206 transcripts: 99 with
+    _S1/_S2/_S7 videos, of which only _S1 is used, and 106 with a single video.
+    Its pose time is measured: the first run processed all 403 videos in
+    0:22:11, about 3.3 s per video, before _S2 and _S7 were excluded. Its
+    segmentation estimate is 205 files at 6.1 s per file.
 
 
 How reliable the estimates are

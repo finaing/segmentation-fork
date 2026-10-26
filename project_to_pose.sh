@@ -13,8 +13,9 @@
 # Some projects only get poses for some camera perspectives (see the case
 # statement before the conversion loop): SMILE2 only *_front, InterGaze only
 # *_Camera_2 and *_Camera_3 (each its own pose file), searched in subdirectories
-# too, and SMILE, SMILE_2018 and SRT-2 only *_S1, using *_S1_aligned instead
-# where a recording has one.
+# too, SMILE, SMILE_2018 and SRT-2 only *_S1, using *_S1_aligned instead where
+# a recording has one, and SMILE-Modellvideos only *_S1 or videos without a
+# perspective suffix.
 #
 # Videos are converted one at a time with video_to_pose rather than with
 # videos_to_poses, which can't write to a separate pose dir, only finds
@@ -105,6 +106,12 @@ case "$project" in
 	SMILE|SMILE_2018|SRT-2)
 		select=(\( -iname '*_S1.*' -o -iname '*_S1_aligned.*' \))
 		prefer_aligned=1
+		;;
+	SMILE-Modellvideos)
+		# Recordings filmed from several perspectives have _S1/_S2/_S7 videos,
+		# the others a single video without a perspective suffix: keep both
+		# kinds, drop every perspective but _S1.
+		select=(\( -iname '*_S1.*' -o ! -iname '*_S[0-9]*.*' \))
 		;;
 esac
 
