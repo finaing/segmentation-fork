@@ -23,7 +23,10 @@
 cd "$(dirname "$0")" || exit 1
 
 module load miniforge3
-source activate segamega
+source activate segamega || { echo "Could not activate conda env segamega" >&2; exit 1; }
+# Ignore packages in ~/.local: its tensorflow needs protobuf >= 5, mediapipe
+# 0.10.21 needs protobuf < 5, and mediapipe fails to import a broken tensorflow.
+export PYTHONNOUSERSITE=1
 
 PROJECTS_CSV="../project_dir_paths.csv"
 POSE_ARGS=()
@@ -34,8 +37,8 @@ usage() {
 }
 
 cpus=2
-mem=120G
-time=48:00:00
+mem=40G
+time=12:00:00
 projects=()
 while [ $# -gt 0 ]; do
 	case "$1" in

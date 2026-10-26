@@ -3,7 +3,7 @@
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=80G
 #SBATCH --time=24:00:00
-#SBATCH --output=%x_%j.out
+#SBATCH --output=%j.out
 #
 # Converts a project's videos (.mp4 and .mov, any case) in its share_path to
 # MediaPipe pose files in <share_path>/pose/<video name>.pose. share_path per
@@ -83,7 +83,10 @@ fi
 mkdir -p "$pose_dir" || exit 1
 
 module load miniforge3
-source activate segamega
+source activate segamega || { echo "Could not activate conda env segamega" >&2; exit 1; }
+# Ignore packages in ~/.local: its tensorflow needs protobuf >= 5, mediapipe
+# 0.10.21 needs protobuf < 5, and mediapipe fails to import a broken tensorflow.
+export PYTHONNOUSERSITE=1
 
 echo "$project: $video_dir -> $pose_dir/"
 echo "video_to_pose ${pose_args[*]}"
