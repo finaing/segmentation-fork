@@ -83,7 +83,7 @@ fi
 mkdir -p "$pose_dir" || exit 1
 
 module load miniforge3
-source activate spoter-pose
+source activate segmentation
 
 echo "$project: $video_dir -> $pose_dir/"
 echo "video_to_pose ${pose_args[*]}"
