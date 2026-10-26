@@ -10,9 +10,10 @@
 # <share_path>/pose/auto_segmented/<name>.eaf. share_path per project is read
 # from PROJECTS_CSV. Each EAF links the pose file and, if found, the video it
 # was estimated from (<name>.mp4 or .mov, any case, in share_path or a
-# subdirectory). Pose files
-# that already have an EAF are skipped, so a job that ran out of time can just
-# be resubmitted.
+# subdirectory). Pose files that already have an EAF are skipped, so a job that
+# ran out of time can just be resubmitted, unless the pose file is newer than
+# the EAF (re-estimated with project_to_pose.sh --overwrite-before). Inference
+# uses all of the job's CPUs (--cpus-per-task).
 #
 # Usage:
 #   sbatch --job-name=SMILE2_poses_to_segments project_to_segments.sh --project SMILE2 \
@@ -74,6 +75,9 @@ source activate segamega || { echo "Could not activate conda env segamega" >&2; 
 # Ignore packages in ~/.local: its tensorflow needs protobuf >= 5, mediapipe
 # 0.10.21 needs protobuf < 5, and mediapipe fails to import a broken tensorflow.
 export PYTHONNOUSERSITE=1
+# PyTorch spreads inference over this many threads; without it, it may count
+# every CPU on the node instead of the ones allocated to the job.
+export OMP_NUM_THREADS="${SLURM_CPUS_PER_TASK:-1}"
 
 echo "$project: $pose_dir/ -> $eaf_dir/"
 done_count=0
@@ -86,7 +90,9 @@ start_time=$(date +%s)
 while IFS= read -r -d '' pose; do
 	name=$(basename "$pose" .pose)
 	eaf="$eaf_dir/$name.eaf"
-	if [ -s "$eaf" ]; then
+	# An EAF older than its pose file is from poses since re-estimated
+	# (project_to_pose.sh --overwrite-before), so it is redone.
+	if [ -s "$eaf" ] && [ "$eaf" -nt "$pose" ]; then
 		skip_count=$((skip_count + 1))
 		continue
 	fi

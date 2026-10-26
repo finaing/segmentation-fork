@@ -6,20 +6,33 @@
 # resubmit one that ran out of time).
 #
 # Each job gets the QOS its time limit needs: normal up to 24 hours, medium up
-# to 48 hours, long up to 7 days.
+# to 48 hours, long up to 7 days. With --parts, a project's pose estimation is
+# split over a Slurm array of that many jobs (each with --cpus, --mem and
+# --time, log <job name>_<part>.out); its segmentation job waits for all of them.
 #
 # Usage:
 #   bash run_estimation.sh [--segment | --segment-only] [--cpus N] [--mem MEM] [--time TIME]
+#       [--workers N] [--parts N] [--overwrite | --overwrite-before DATE]
 #       [--seg-cpus N] [--seg-mem MEM] [--seg-time TIME] [PROJECT...]
 #
 #   --segment       also segment the pose files into EAFs once pose estimation
 #                   has ended (whether or not every video succeeded: the
 #                   segmentation job segments whatever pose files exist)
 #   --segment-only  only segment the projects' existing pose files
-#   --cpus          CPUs per pose job, also used as project_to_pose.sh --workers
-#                   (default: 2)
+#   --cpus          CPUs per pose job (default: 2). The job converts --cpus /
+#                   --workers videos at once.
 #   --mem           memory per pose job, as for sbatch --mem (default: 40G)
 #   --time          time limit per pose job, as for sbatch --time (default: 12:00:00)
+#   --workers       MediaPipe instances per video, passed on to project_to_pose.sh
+#                   (default: 1; more than 1 changes the results, see there)
+#   --parts         split each project's pose estimation over N array jobs
+#                   (default: 1)
+#   --overwrite     redo the projects' existing pose files (and so their EAFs).
+#                   Prints the --overwrite-before time it uses: pass that instead
+#                   when resubmitting, so files redone since are kept.
+#   --overwrite-before DATE
+#                   redo pose files (and EAFs) last written before DATE, passed on
+#                   to project_to_pose.sh
 #   --seg-cpus      CPUs per segmentation job (default: 2)
 #   --seg-mem       memory per segmentation job (default: 16G)
 #   --seg-time      time limit per segmentation job (default: 2:00:00)
@@ -32,6 +45,10 @@
 #   bash run_estimation.sh --segment --cpus 8 --mem 32G --time 72:00:00 \
 #       --seg-mem 64G --seg-time 12:00:00 SMILE2
 #   bash run_estimation.sh --segment-only --seg-mem 16G SMILE2 "Noah David"
+#   bash run_estimation.sh --segment --cpus 8 --mem 32G --time 12:00:00 --parts 10 \
+#       --seg-cpus 8 --seg-mem 32G --seg-time 12:00:00 SMILE2
+#   bash run_estimation.sh --segment --cpus 8 --mem 16G --time 1:00:00 --overwrite \
+#       --seg-mem 4G --seg-time 1:00:00 SRT-1-Modellvideos
 #
 # Extra arguments for project_to_pose.sh (e.g. --additional-config) can be put
 # in POSE_ARGS below.
@@ -54,6 +71,7 @@ EXCLUDED_PROJECTS=(Justisigns)
 
 usage() {
 	echo "Usage: $0 [--segment | --segment-only] [--cpus N] [--mem MEM] [--time TIME]" \
+		"[--workers N] [--parts N] [--overwrite | --overwrite-before DATE]" \
 		"[--seg-cpus N] [--seg-mem MEM] [--seg-time TIME] [PROJECT...]" >&2
 	exit 1
 }
@@ -96,6 +114,10 @@ time=12:00:00
 seg_cpus=2
 seg_mem=16G
 seg_time=2:00:00
+workers=1
+parts=1
+overwrite=""
+overwrite_before=""
 segment=""
 segment_only=""
 projects=()
@@ -104,6 +126,10 @@ while [ $# -gt 0 ]; do
 		--cpus) [ $# -ge 2 ] || usage; cpus="$2"; shift 2 ;;
 		--mem) [ $# -ge 2 ] || usage; mem="$2"; shift 2 ;;
 		--time) [ $# -ge 2 ] || usage; time="$2"; shift 2 ;;
+		--workers) [ $# -ge 2 ] || usage; workers="$2"; shift 2 ;;
+		--parts) [ $# -ge 2 ] || usage; parts="$2"; shift 2 ;;
+		--overwrite) overwrite=1; shift ;;
+		--overwrite-before) [ $# -ge 2 ] || usage; overwrite_before="$2"; shift 2 ;;
 		--seg-cpus) [ $# -ge 2 ] || usage; seg_cpus="$2"; shift 2 ;;
 		--seg-mem) [ $# -ge 2 ] || usage; seg_mem="$2"; shift 2 ;;
 		--seg-time) [ $# -ge 2 ] || usage; seg_time="$2"; shift 2 ;;
@@ -113,11 +139,32 @@ while [ $# -gt 0 ]; do
 		*) projects+=("$1"); shift ;;
 	esac
 done
-for n in "$cpus" "$seg_cpus"; do
+for n in "$cpus" "$seg_cpus" "$workers" "$parts"; do
 	case "$n" in
-		''|*[!0-9]*|0) echo "--cpus and --seg-cpus must be positive integers: $n" >&2; exit 1 ;;
+		''|*[!0-9]*|0) echo "--cpus, --seg-cpus, --workers and --parts must be positive integers: $n" >&2; exit 1 ;;
 	esac
 done
+if [ -n "$overwrite" ] && [ -n "$overwrite_before" ]; then
+	echo "--overwrite and --overwrite-before can't be combined" >&2
+	exit 1
+fi
+if [ -n "$overwrite" ]; then
+	overwrite_before=$(date '+%Y-%m-%d %H:%M:%S')
+	echo "Redoing pose files written before $overwrite_before;" \
+		"to resubmit, use --overwrite-before \"$overwrite_before\" instead of --overwrite"
+fi
+if [ -n "$overwrite_before" ] && ! date -d "$overwrite_before" > /dev/null 2>&1; then
+	echo "--overwrite-before isn't a date: $overwrite_before" >&2
+	exit 1
+fi
+pose_args=(--workers "$workers")
+[ -n "$overwrite_before" ] && pose_args+=(--overwrite-before "$overwrite_before")
+array=()
+if [ "$parts" -gt 1 ]; then
+	# One log per part; the default %x.out would have all parts write to one file
+	array=(--array="0-$((parts - 1))" --output="%x_%a.out")
+	pose_args+=(--parts "$parts")
+fi
 if [ -n "$segment" ] && [ -n "$segment_only" ]; then
 	echo "--segment and --segment-only can't be combined" >&2
 	exit 1
@@ -137,17 +184,17 @@ for project in "${projects[@]}"; do
 	pose_job=""
 	if [ -z "$segment_only" ]; then
 		# --parsable prints just the job ID (plus ";cluster" on multi-cluster setups)
-		pose_job=$(sbatch --parsable --job-name="${project// /_}_videos_to_poses" \
+		pose_job=$(sbatch --parsable "${array[@]}" --job-name="${project// /_}_videos_to_poses" \
 			--cpus-per-task="$cpus" --mem="$mem" --time="$time" --qos="$qos" \
 			project_to_pose.sh --project "$project" --csv "$PROJECTS_CSV" \
-			--workers "$cpus" "${POSE_ARGS[@]}") || { status=1; continue; }
+			"${pose_args[@]}" "${POSE_ARGS[@]}") || { status=1; continue; }
 		pose_job="${pose_job%%;*}"
-		echo "$project: pose job $pose_job ($qos)"
+		echo "$project: pose job $pose_job ($qos${array:+, $parts parts})"
 	fi
 	if [ -n "$segment" ] || [ -n "$segment_only" ]; then
 		# afterany, not afterok: the pose job also fails when a single video
 		# fails or it runs out of time, and the pose files it did write should
-		# still be segmented.
+		# still be segmented. For an array, it waits for every part.
 		dependency=()
 		[ -n "$pose_job" ] && dependency=(--dependency="afterany:$pose_job")
 		seg_job=$(sbatch --parsable "${dependency[@]}" --job-name="${project// /_}_poses_to_segments" \
