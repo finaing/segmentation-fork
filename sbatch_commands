@@ -6,6 +6,9 @@ PYTHONNOUSERSITE=1) for the jobs. The last column's command (--segment)
 submits both steps at once: the segmentation job waits for the pose job to end
 (sbatch --dependency=afterany) and then segments whatever pose files exist. To
 resubmit only a segmentation job, use --segment-only with the --seg-* options.
+run_estimation.sh picks each job's QOS from its time limit: normal up to 24
+hours, medium up to 48 hours, long up to 7 days (only SMILE2's pose job, at
+100 hours, needs long).
 
 Estimates are from ../time_estimation.md, fitted on the logs of the three
 finished projects: pose estimation takes about 1.4 s per video plus 11.8 ms
