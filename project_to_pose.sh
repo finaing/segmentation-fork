@@ -17,7 +17,7 @@
 #   --csv      path to PROJECTS_CSV (default: project_dir_paths.csv in the
 #              directory sbatch was run from)
 
-PROJECTS_CSV="project_dir_paths.csv"
+PROJECTS_CSV="../project_dir_paths.csv"
 SHARE_PREFIX="/shares/sign-language.ebling.cl.uzh/"
 
 usage() {
