@@ -59,6 +59,8 @@ publish = [
 line-length = 120
 
 [tool.ruff.lint]
+# ruff's defaults before 0.16, which enabled many more rules by default
+select = ["E4", "E7", "E9", "F"]
 ignore = [
     "E501",  # line too long (handled by line-length)
     "F401",  # unused imports in __init__.py re-exports
