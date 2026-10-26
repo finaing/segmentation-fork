@@ -25,6 +25,11 @@ usage() {
 	exit 1
 }
 
+# hms SECONDS: prints SECONDS as H:MM:SS
+hms() {
+	printf '%d:%02d:%02d' $(($1 / 3600)) $(($1 % 3600 / 60)) $(($1 % 60))
+}
+
 # csv_field PROJECT COLUMN: prints column COLUMN of PROJECT's row
 csv_field() {
 	awk -F, -v p="$1" -v c="$2" '{ sub(/\r$/, "") } NR > 1 && $1 == p { print $c; exit }' "$PROJECTS_CSV"
@@ -61,6 +66,9 @@ echo "$project: $video_dir -> $pose_dir/"
 done_count=0
 skip_count=0
 fail_count=0
+# Time spent in video_to_pose on successful conversions, for the average
+convert_seconds=0
+start_time=$(date +%s)
 while IFS= read -r -d '' video; do
 	name=$(basename "$video")
 	pose="$pose_dir/${name%.*}.pose"
@@ -68,17 +76,24 @@ while IFS= read -r -d '' video; do
 		skip_count=$((skip_count + 1))
 		continue
 	fi
-	echo "$name"
+	video_start=$(date +%s)
 	# Write to a temp file first, so a run killed mid-video doesn't leave a
 	# partial .pose that would be skipped next time.
 	if video_to_pose --format mediapipe -i "$video" -o "$pose.tmp" && mv "$pose.tmp" "$pose"; then
+		elapsed=$(($(date +%s) - video_start))
+		convert_seconds=$((convert_seconds + elapsed))
 		done_count=$((done_count + 1))
+		echo "$(hms "$elapsed")  $name"
 	else
-		echo "FAILED: $video" >&2
+		echo "FAILED after $(hms $(($(date +%s) - video_start))): $video" >&2
 		rm -f "$pose.tmp"
 		fail_count=$((fail_count + 1))
 	fi
 done < <(find "$video_dir" -maxdepth 1 -type f \( -iname '*.mp4' -o -iname '*.mov' \) -print0 | LC_ALL=C sort -z)
 
 echo "$project: $done_count converted, $skip_count already done, $fail_count failed"
+echo "Total time: $(hms $(($(date +%s) - start_time)))"
+if [ "$done_count" -gt 0 ]; then
+	echo "Average per converted video: $(hms $((convert_seconds / done_count)))"
+fi
 [ "$fail_count" -eq 0 ]
