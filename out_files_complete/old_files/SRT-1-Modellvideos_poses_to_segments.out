@@ -1,0 +1,238 @@
+SRT-1-Modellvideos: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/ -> /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz10.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz10.eaf.tmp
+0:00:14  SRT-1_Modell_I410_Satz10
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz11.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 4 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz11.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz11
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz12.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 3 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz12.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz12
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz13.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 3 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz13.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz13
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz14.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 5 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz14.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz14
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz15.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 4 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz15.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz15
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz16.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 5 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz16.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz16
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz17.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 5 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz17.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz17
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz18.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 9 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz18.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz18
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz19.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz19.eaf.tmp
+0:00:06  SRT-1_Modell_I410_Satz19
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz2.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 5 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz2.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz2
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz20.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz20.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz20
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz21.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 8 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz21.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz21
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz22.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 13 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz22.eaf.tmp
+0:00:06  SRT-1_Modell_I410_Satz22
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz23.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 7 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz23.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz23
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz24.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz24.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz24
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz25.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz25.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz25
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz26.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 7 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz26.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz26
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz27.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz27.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz27
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz28.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 5 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz28.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz28
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz29.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 8 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz29.eaf.tmp
+0:00:06  SRT-1_Modell_I410_Satz29
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz3.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 5 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz3.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz3
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz30.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 12 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz30.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz30
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz31.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 8 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz31.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz31
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz32.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 8 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz32.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz32
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz33.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz33.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz33
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz34.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 7 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz34.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz34
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz35.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 10 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz35.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz35
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz36.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz36.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz36
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz37.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz37.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz37
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz38.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 9 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz38.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz38
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz39.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 11 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz39.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz39
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz4.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 3 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz4.eaf.tmp
+0:00:04  SRT-1_Modell_I410_Satz4
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz40.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 13 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz40.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz40
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz5.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 4 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz5.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz5
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz6.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 3 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz6.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz6
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz7.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 4 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz7.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz7
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz8.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz8.eaf.tmp
+0:00:04  SRT-1_Modell_I410_Satz8
+Loading pose: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/SRT-1_Modell_I410_Satz9.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SRT-1-modellvideos/ELAN/pose/auto_segmented/SRT-1_Modell_I410_Satz9.eaf.tmp
+0:00:05  SRT-1_Modell_I410_Satz9
+SRT-1-Modellvideos: 39 segmented, 0 already done, 0 failed, 0 without video
+Total time: 0:03:25
+Average per segmented pose file: 0:00:05

@@ -1,0 +1,82 @@
+SRT-2-Modellvideos: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/ -> /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz18.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 9 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz18.eaf.tmp
+0:00:14  SRT-2-Modell_I222_Satz18
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz20.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 8 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz20.eaf.tmp
+0:00:05  SRT-2-Modell_I222_Satz20
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz21.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 9 signs, 5 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz21.eaf.tmp
+0:00:04  SRT-2-Modell_I222_Satz21
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz22.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 13 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz22.eaf.tmp
+0:00:04  SRT-2-Modell_I222_Satz22
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz27.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 8 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz27.eaf.tmp
+0:00:05  SRT-2-Modell_I222_Satz27
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz28.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 4 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz28.eaf.tmp
+0:00:04  SRT-2-Modell_I222_Satz28
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz30.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 9 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz30.eaf.tmp
+0:00:04  SRT-2-Modell_I222_Satz30
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz32.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 5 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz32.eaf.tmp
+0:00:04  SRT-2-Modell_I222_Satz32
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz34.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 7 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz34.eaf.tmp
+0:00:04  SRT-2-Modell_I222_Satz34
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz38.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz38.eaf.tmp
+0:00:05  SRT-2-Modell_I222_Satz38
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz39.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 9 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz39.eaf.tmp
+0:00:04  SRT-2-Modell_I222_Satz39
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz6.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 5 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz6.eaf.tmp
+0:00:05  SRT-2-Modell_I222_Satz6
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/SRT-2-Modell_I222_Satz9.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 6 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/auto_segmented/SRT-2-Modell_I222_Satz9.eaf.tmp
+0:00:04  SRT-2-Modell_I222_Satz9
+SRT-2-Modellvideos: 13 segmented, 0 already done, 0 failed, 0 without video
+Total time: 0:01:06
+Average per segmented pose file: 0:00:05

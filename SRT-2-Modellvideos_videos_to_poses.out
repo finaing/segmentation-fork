@@ -1,0 +1,18 @@
+SRT-2-Modellvideos: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/ -> /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2-Modellvideos/pose/
+video_to_pose --format mediapipe --workers 1, 8 at once, redoing pose files written before 2026-10-26 15:16:58
+0:00:25  SRT-2-Modell_I222_Satz28.mp4  (122 frames)
+0:00:26  SRT-2-Modell_I222_Satz32.mp4  (137 frames)
+0:00:27  SRT-2-Modell_I222_Satz20.mp4  (149 frames)
+0:00:30  SRT-2-Modell_I222_Satz27.mp4  (186 frames)
+0:00:33  SRT-2-Modell_I222_Satz30.mp4  (224 frames)
+0:00:34  SRT-2-Modell_I222_Satz22.mp4  (245 frames)
+0:00:38  SRT-2-Modell_I222_Satz21.mp4  (286 frames)
+0:00:14  SRT-2-Modell_I222_Satz34.mp4  (143 frames)
+0:00:39  SRT-2-Modell_I222_Satz18.mp4  (300 frames)
+0:00:11  SRT-2-Modell_I222_Satz6.mp4  (121 frames)
+0:00:16  SRT-2-Modell_I222_Satz38.mp4  (190 frames)
+0:00:18  SRT-2-Modell_I222_Satz39.mp4  (212 frames)
+0:00:12  SRT-2-Modell_I222_Satz9.mp4  (152 frames)
+SRT-2-Modellvideos: 13 converted, 0 already done, 0 failed, 0 broken links
+Total time: 0:00:45
+Average per converted video: 0:00:24 (8 at once)
