@@ -83,7 +83,7 @@ fi
 mkdir -p "$pose_dir" || exit 1
 
 module load miniforge3
-source activate segmentation
+source activate segamega
 
 echo "$project: $video_dir -> $pose_dir/"
 echo "video_to_pose ${pose_args[*]}"

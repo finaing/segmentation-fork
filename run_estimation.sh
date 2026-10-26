@@ -23,7 +23,7 @@
 cd "$(dirname "$0")" || exit 1
 
 module load miniforge3
-source activate segmentation
+source activate segamega
 
 PROJECTS_CSV="../project_dir_paths.csv"
 POSE_ARGS=()
