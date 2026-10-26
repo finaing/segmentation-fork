@@ -27,14 +27,15 @@ in hours instead of days; each part gets --cpus, --mem and --time and writes
 its own log, <project>_videos_to_poses_<part>.out. Segmentation gets 8 CPUs
 for SMILE2 and SMILE (PyTorch uses all of them), 2 elsewhere.
 
-Memory: the finished jobs peaked at 3.1-4.1G for pose estimation (one video
-at a time with 8 MediaPipe instances) and about 1.1G for segmentation, on
-clips of up to 700 frames. With 8 videos at once, each process holds its own
-MediaPipe instance and the pose data of its video, which grows with frames per
-file. So pose jobs get 16G, or 32G for projects with long files (SMILE2, SMILE,
-SRT-2, SMILE_2018: 35,000 to 100,000 frames per file), and segmentation of
-those projects gets 16-32G, as it processes all of a file's 1024-frame chunks
-in one batch.
+Memory: the finished jobs peaked at 3.1-4.1G for pose estimation and about
+1.1G for segmentation, on clips of up to 700 frames. With 8 videos at once
+(SRT-1-Modellvideos rerun), pose estimation peaked at 3.7G for all 8
+processes together, and used half the CPU time of one video at a time with 8
+MediaPipe instances. Each process holds the pose data of its video, which
+grows with frames per file. So pose jobs get 8G, or 16-32G for projects with
+long files (SMILE2, SMILE, SRT-2, SMILE_2018, Noah David: 35,000 to 100,000
+frames per file), and segmentation of those projects gets 16-32G, as it
+processes all of a file's 1024-frame chunks in one batch.
 
 ┌────────────────────┬─────────┬──────────────┬───────┬───────────┬─────────────────────────────────────────────────────────────────────────────┬───────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │      Project       │  Files  │ Video length │  FPS  │ Pose est. │                           Pose estimation command                           │ Seg. est. │                                                Pose estimation + segmentation command                                                │
@@ -43,25 +44,25 @@ in one batch.
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ SMILE              │      39 │     21:27:04 │    30 │      7:38 │ bash run_estimation.sh --cpus 8 --mem 32G --time 8:00:00 --parts 2 SMILE    │      1:40 │ bash run_estimation.sh --segment --cpus 8 --mem 32G --time 8:00:00 --parts 2 --seg-cpus 8 --seg-mem 16G --seg-time 6:00:00 SMILE     │
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ Spark              │     358 │      9:46:08 │    25 │      3:02 │ bash run_estimation.sh --cpus 8 --mem 16G --time 8:00:00 Spark              │      1:00 │ bash run_estimation.sh --segment --cpus 8 --mem 16G --time 8:00:00 --seg-mem 4G --seg-time 4:00:00 Spark                             │
+│ Spark              │     358 │      9:46:08 │    25 │      3:02 │ bash run_estimation.sh --cpus 8 --mem 8G --time 8:00:00 Spark               │      1:00 │ bash run_estimation.sh --segment --cpus 8 --mem 8G --time 8:00:00 --seg-mem 4G --seg-time 4:00:00 Spark                              │
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ InterGaze          │  24 (1) │      3:32:47 │    25 │      1:04 │ bash run_estimation.sh --cpus 8 --mem 16G --time 4:00:00 InterGaze          │      0:15 │ bash run_estimation.sh --segment --cpus 8 --mem 16G --time 4:00:00 --seg-mem 4G --seg-time 2:00:00 InterGaze                         │
+│ InterGaze          │  24 (1) │      3:32:47 │    25 │      1:04 │ bash run_estimation.sh --cpus 8 --mem 8G --time 4:00:00 InterGaze           │      0:15 │ bash run_estimation.sh --segment --cpus 8 --mem 8G --time 4:00:00 --seg-mem 4G --seg-time 2:00:00 InterGaze                          │
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ SRT-2              │      10 │      3:18:10 │    30 │      1:11 │ bash run_estimation.sh --cpus 8 --mem 32G --time 4:00:00 SRT-2              │      0:16 │ bash run_estimation.sh --segment --cpus 8 --mem 32G --time 4:00:00 --seg-mem 16G --seg-time 4:00:00 SRT-2                            │
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ SMILE_2018         │       9 │      1:54:20 │    60 │      1:21 │ bash run_estimation.sh --cpus 8 --mem 32G --time 4:00:00 SMILE_2018         │      0:18 │ bash run_estimation.sh --segment --cpus 8 --mem 32G --time 4:00:00 --seg-mem 16G --seg-time 4:00:00 SMILE_2018                       │
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ Stufen-CDs_Texte   │  29 (2) │      1:09:18 │    25 │      0:21 │ bash run_estimation.sh --cpus 8 --mem 16G --time 1:00:00 Stufen-CDs_Texte   │      0:06 │ bash run_estimation.sh --segment --cpus 8 --mem 16G --time 1:00:00 --seg-mem 4G --seg-time 1:00:00 Stufen-CDs_Texte                  │
+│ Stufen-CDs_Texte   │  29 (2) │      1:09:18 │    25 │      0:21 │ bash run_estimation.sh --cpus 8 --mem 8G --time 1:00:00 Stufen-CDs_Texte    │      0:06 │ bash run_estimation.sh --segment --cpus 8 --mem 8G --time 1:00:00 --seg-mem 4G --seg-time 1:00:00 Stufen-CDs_Texte                   │
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ Noah David         │       2 │      0:46:58 │    25 │      0:14 │ bash run_estimation.sh --cpus 8 --mem 16G --time 1:00:00 "Noah David"       │      0:03 │ bash run_estimation.sh --segment --cpus 8 --mem 16G --time 1:00:00 --seg-mem 16G --seg-time 4:00:00 "Noah David"                     │
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ SRT-1              │     305 │      0:34:54 │ 29.97 │      0:19 │ bash run_estimation.sh --cpus 8 --mem 16G --time 1:00:00 SRT-1              │      0:22 │ bash run_estimation.sh --segment --cpus 8 --mem 16G --time 1:00:00 --seg-mem 4G --seg-time 2:00:00 SRT-1                             │
+│ SRT-1              │     305 │      0:34:54 │ 29.97 │      0:19 │ bash run_estimation.sh --cpus 8 --mem 8G --time 1:00:00 SRT-1               │      0:22 │ bash run_estimation.sh --segment --cpus 8 --mem 8G --time 1:00:00 --seg-mem 4G --seg-time 2:00:00 SRT-1                              │
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ SMILE-Modellvideos │ 205 (3) │      0:12:53 │    25 │      0:22 │ bash run_estimation.sh --cpus 8 --mem 16G --time 1:00:00 SMILE-Modellvideos │      0:27 │ bash run_estimation.sh --segment --cpus 8 --mem 16G --time 1:00:00 --seg-mem 4G --seg-time 1:00:00 SMILE-Modellvideos                │
+│ SMILE-Modellvideos │ 205 (3) │      0:12:53 │    25 │      0:22 │ bash run_estimation.sh --cpus 8 --mem 8G --time 1:00:00 SMILE-Modellvideos  │      0:27 │ bash run_estimation.sh --segment --cpus 8 --mem 8G --time 1:00:00 --seg-mem 4G --seg-time 1:00:00 SMILE-Modellvideos                 │
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ SRT-1-Modellvideos │      39 │      0:04:50 │    50 │      0:04 │ bash run_estimation.sh --cpus 8 --mem 16G --time 1:00:00 SRT-1-Modellvideos │      0:03 │ bash run_estimation.sh --segment --cpus 8 --mem 16G --time 1:00:00 --seg-mem 4G --seg-time 1:00:00 SRT-1-Modellvideos                │
+│ SRT-1-Modellvideos │      39 │      0:04:50 │    50 │      0:04 │ bash run_estimation.sh --cpus 8 --mem 8G --time 1:00:00 SRT-1-Modellvideos  │      0:03 │ bash run_estimation.sh --segment --cpus 8 --mem 8G --time 1:00:00 --seg-mem 4G --seg-time 1:00:00 SRT-1-Modellvideos                 │
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ SRT-2-Modellvideos │      13 │      0:01:39 │    25 │      0:01 │ bash run_estimation.sh --cpus 8 --mem 16G --time 1:00:00 SRT-2-Modellvideos │      0:01 │ bash run_estimation.sh --segment --cpus 8 --mem 16G --time 1:00:00 --seg-mem 4G --seg-time 1:00:00 SRT-2-Modellvideos                │
+│ SRT-2-Modellvideos │      13 │      0:01:39 │    25 │      0:01 │ bash run_estimation.sh --cpus 8 --mem 8G --time 1:00:00 SRT-2-Modellvideos  │      0:01 │ bash run_estimation.sh --segment --cpus 8 --mem 8G --time 1:00:00 --seg-mem 4G --seg-time 1:00:00 SRT-2-Modellvideos                 │
 ├────────────────────┼─────────┼──────────────┼───────┼───────────┼─────────────────────────────────────────────────────────────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ Total              │    1176 │    109:22:54 │       │     62:57 │                                                                             │     14:48 │                                                                                                                                      │
 └────────────────────┴─────────┴──────────────┴───────┴───────────┴─────────────────────────────────────────────────────────────────────────────┴───────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
@@ -75,14 +76,15 @@ time with --workers 8 (8 MediaPipe instances on interleaved frames), so their
 poses differ slightly from the --workers 1 runs above. To redo them the same way,
 add --overwrite to their last-column command, e.g.
 
-    bash run_estimation.sh --segment --cpus 8 --mem 16G --time 1:00:00 --overwrite --seg-mem 4G --seg-time 1:00:00 SRT-1-Modellvideos
+    bash run_estimation.sh --segment --cpus 8 --mem 8G --time 1:00:00 --overwrite --seg-mem 4G --seg-time 1:00:00 SRT-2-Modellvideos
 
 --overwrite redoes every pose file written before the moment it is run and
 prints that moment; segmentation then redoes the EAFs whose pose files are
 newer. If a job runs out of time, resubmit with --overwrite-before "<printed
 time>" instead of --overwrite, so the files already redone are kept. As of
-the logs, this applies to SRT-1, SRT-1-Modellvideos, SRT-2-Modellvideos and
-SMILE-Modellvideos; check the pose/ folders' file dates for any others.
+the logs, this applies to SRT-1, SRT-2-Modellvideos and SMILE-Modellvideos
+(SRT-1-Modellvideos has been redone); check the pose/ folders' file dates
+for any others.
 
 
 Notes
