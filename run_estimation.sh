@@ -13,7 +13,7 @@
 #   --time     time limit per job, as for sbatch --time (default: 12:00:00)
 #   PROJECT    project name as in the "project" column of PROJECTS_CSV (quote
 #              names with spaces, e.g. "Noah David"). Default: all projects
-#              in PROJECTS_CSV.
+#              in PROJECTS_CSV except those in EXCLUDED_PROJECTS below.
 #
 # Examples:
 #   ./run_estimation.sh --cpus 8 --mem 200G --time 72:00:00 SMILE2 "Noah David"
@@ -34,6 +34,9 @@ export PYTHONNOUSERSITE=1
 
 PROJECTS_CSV="../project_dir_paths.csv"
 POSE_ARGS=()
+# Projects in PROJECTS_CSV left out when no PROJECT is given (they can still be
+# named explicitly)
+EXCLUDED_PROJECTS=(Justisigns)
 
 usage() {
 	echo "Usage: $0 [--segment] [--cpus N] [--mem MEM] [--time TIME] [PROJECT...]" >&2
@@ -60,7 +63,10 @@ case "$cpus" in
 esac
 
 if [ ${#projects[@]} -eq 0 ]; then
-	mapfile -t projects < <(awk -F, '{ sub(/\r$/, "") } NR > 1 && $1 != "" { print $1 }' "$PROJECTS_CSV")
+	mapfile -t projects < <(awk -F, -v excluded="$(printf '%s\n' "${EXCLUDED_PROJECTS[@]}")" '
+		BEGIN { n = split(excluded, e, "\n"); for (i = 1; i <= n; i++) skip[e[i]] = 1 }
+		{ sub(/\r$/, "") }
+		NR > 1 && $1 != "" && !($1 in skip) { print $1 }' "$PROJECTS_CSV")
 fi
 
 for project in "${projects[@]}"; do
