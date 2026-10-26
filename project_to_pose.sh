@@ -10,18 +10,30 @@
 # project is read from PROJECTS_CSV. Videos that already have a pose file are
 # skipped, so a job that ran out of time can just be resubmitted.
 #
-# Usage:
-#   sbatch --job-name=SMILE2_videos_to_poses project_to_pose.sh --project SMILE2 [--csv PATH]
+# Videos are converted one at a time with video_to_pose rather than with
+# videos_to_poses, which can't write to a separate pose dir, only finds
+# lowercase suffixes (.mp4, not .MP4) and asks for input on name collisions.
 #
-#   --project  project name as in the "project" column of PROJECTS_CSV
-#   --csv      path to PROJECTS_CSV (default: project_dir_paths.csv in the
-#              directory sbatch was run from)
+# Usage:
+#   sbatch --job-name=SMILE2_videos_to_poses project_to_pose.sh --project SMILE2 \
+#       [--csv PATH] [--workers N] [--additional-config CONFIG]
+#
+#   --project            project name as in the "project" column of PROJECTS_CSV
+#   --csv                path to PROJECTS_CSV (default: ../project_dir_paths.csv,
+#                        relative to the directory sbatch was run from)
+#   --workers            parallel MediaPipe Holistic instances per video (default:
+#                        the job's --cpus-per-task). Frames are dealt round-robin
+#                        to the instances, so with N > 1 each instance only tracks
+#                        every Nth frame; pass static_image_mode=true in
+#                        --additional-config for results that don't depend on N.
+#   --additional-config  passed on to video_to_pose, e.g.
+#                        "model_complexity=2,refine_face_landmarks=true"
 
 PROJECTS_CSV="../project_dir_paths.csv"
 SHARE_PREFIX="/shares/sign-language.ebling.cl.uzh/"
 
 usage() {
-	echo "Usage: $0 --project PROJECT [--csv PATH]" >&2
+	echo "Usage: $0 --project PROJECT [--csv PATH] [--workers N] [--additional-config CONFIG]" >&2
 	exit 1
 }
 
@@ -36,14 +48,25 @@ csv_field() {
 }
 
 project=""
+# Not video_to_pose's own default of 0 (= all CPUs): that counts every CPU on
+# the node, not just the ones allocated to the job.
+workers="${SLURM_CPUS_PER_TASK:-1}"
+additional_config=""
 while [ $# -gt 0 ]; do
 	case "$1" in
 		--project) [ $# -ge 2 ] || usage; project="$2"; shift 2 ;;
 		--csv) [ $# -ge 2 ] || usage; PROJECTS_CSV="$2"; shift 2 ;;
+		--workers) [ $# -ge 2 ] || usage; workers="$2"; shift 2 ;;
+		--additional-config) [ $# -ge 2 ] || usage; additional_config="$2"; shift 2 ;;
 		*) usage ;;
 	esac
 done
 [ -n "$project" ] || usage
+case "$workers" in
+	''|*[!0-9]*|0) echo "--workers must be a positive integer: $workers" >&2; exit 1 ;;
+esac
+pose_args=(--format mediapipe --workers "$workers")
+[ -n "$additional_config" ] && pose_args+=(--additional-config "$additional_config")
 [ -f "$PROJECTS_CSV" ] || { echo "Missing $PROJECTS_CSV" >&2; exit 1; }
 
 share_path=$(csv_field "$project" 2)
@@ -63,6 +86,7 @@ module load miniforge3
 source activate spoter-pose
 
 echo "$project: $video_dir -> $pose_dir/"
+echo "video_to_pose ${pose_args[*]}"
 done_count=0
 skip_count=0
 fail_count=0
@@ -79,7 +103,7 @@ while IFS= read -r -d '' video; do
 	video_start=$(date +%s)
 	# Write to a temp file first, so a run killed mid-video doesn't leave a
 	# partial .pose that would be skipped next time.
-	if video_to_pose --format mediapipe -i "$video" -o "$pose.tmp" && mv "$pose.tmp" "$pose"; then
+	if video_to_pose "${pose_args[@]}" -i "$video" -o "$pose.tmp" && mv "$pose.tmp" "$pose"; then
 		elapsed=$(($(date +%s) - video_start))
 		convert_seconds=$((convert_seconds + elapsed))
 		done_count=$((done_count + 1))
@@ -89,9 +113,18 @@ while IFS= read -r -d '' video; do
 		rm -f "$pose.tmp"
 		fail_count=$((fail_count + 1))
 	fi
-done < <(find "$video_dir" -maxdepth 1 -type f \( -iname '*.mp4' -o -iname '*.mov' \) -print0 | LC_ALL=C sort -z)
+# -xtype, not -type: the videos are mostly symlinks, and -xtype f matches both
+# regular files and symlinks to them. Pose files are named after the link.
+done < <(find "$video_dir" -maxdepth 1 -xtype f \( -iname '*.mp4' -o -iname '*.mov' \) -print0 | LC_ALL=C sort -z)
 
-echo "$project: $done_count converted, $skip_count already done, $fail_count failed"
+# Symlinks whose target is missing (-xtype l) can't be converted
+broken_count=0
+while IFS= read -r -d '' video; do
+	echo "BROKEN LINK: $video -> $(readlink "$video")" >&2
+	broken_count=$((broken_count + 1))
+done < <(find "$video_dir" -maxdepth 1 -xtype l \( -iname '*.mp4' -o -iname '*.mov' \) -print0 | LC_ALL=C sort -z)
+
+echo "$project: $done_count converted, $skip_count already done, $fail_count failed, $broken_count broken links"
 echo "Total time: $(hms $(($(date +%s) - start_time)))"
 if [ "$done_count" -gt 0 ]; then
 	echo "Average per converted video: $(hms $((convert_seconds / done_count)))"
