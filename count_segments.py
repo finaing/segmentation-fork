@@ -117,8 +117,8 @@ def main() -> int:
     if args.out:
         with open(args.out, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-            writer.writerow(["project", "eafs", "sentences", "signs", "unparsable"])
-            writer.writerows([p, *(f"{n:,}" for n in counts)] for p, *counts in [*rows_with_subtotals, total])
+            writer.writerow(["project", "eafs", "sentences", "signs"])
+            writer.writerows([p, f"{n:,}", f"{s:,}", f"{g:,}"] for p, n, s, g, _ in [*rows_with_subtotals, total])
     return 1 if any(r[4] for r in results) else 0
 
 
