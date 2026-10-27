@@ -110,15 +110,15 @@ def main() -> int:
         if r[0] in subtotals:
             rows_with_subtotals.append(subtotals[r[0]])
 
-    rows = [[p, f"{n:,}", f"{s:,}", f"{g:,}"] for p, n, s, g, _ in rows_with_subtotals]
-    rows.append(["Total", *(f"{sum(r[i] for r in results):,}" for i in (1, 2, 3))])
+    total = ("Total", *(sum(r[i] for r in results) for i in (1, 2, 3, 4)))
+    rows = [[p, f"{n:,}", f"{s:,}", f"{g:,}"] for p, n, s, g, _ in [*rows_with_subtotals, total]]
     print(table(["Project", "EAFs", "Sentences", "Signs"], rows))
 
     if args.out:
         with open(args.out, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
             writer.writerow(["project", "eafs", "sentences", "signs", "unparsable"])
-            writer.writerows([p, *(f"{n:,}" for n in counts)] for p, *counts in rows_with_subtotals)
+            writer.writerows([p, *(f"{n:,}" for n in counts)] for p, *counts in [*rows_with_subtotals, total])
     return 1 if any(r[4] for r in results) else 0
 
 
