@@ -1,0 +1,59 @@
+InterGaze: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/ -> /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/
+Loading pose: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_Erzahlung_Eiskonigin_1_Camera_2.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 234 signs, 35 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/L1_A_Erzahlung_Eiskonigin_1_Camera_2.eaf.tmp
+0:00:25  L1_A_Erzahlung_Eiskonigin_1_Camera_2
+Loading pose: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_Erzahlung_Eiskonigin_1_Camera_3.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 343 signs, 60 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/L1_A_Erzahlung_Eiskonigin_1_Camera_3.eaf.tmp
+0:00:18  L1_A_Erzahlung_Eiskonigin_1_Camera_3
+Loading pose: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_Erzahlung_Heineken_A_1_Camera_2.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 524 signs, 24 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/L1_A_Erzahlung_Heineken_A_1_Camera_2.eaf.tmp
+0:00:21  L1_A_Erzahlung_Heineken_A_1_Camera_2
+Loading pose: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_Erzahlung_Heineken_A_1_Camera_3.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 417 signs, 26 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/L1_A_Erzahlung_Heineken_A_1_Camera_3.eaf.tmp
+0:00:20  L1_A_Erzahlung_Heineken_A_1_Camera_3
+Loading pose: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_Erzahlung_Heineken_B_1_Camera_2.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 236 signs, 26 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/L1_A_Erzahlung_Heineken_B_1_Camera_2.eaf.tmp
+0:00:18  L1_A_Erzahlung_Heineken_B_1_Camera_2
+Loading pose: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_Erzahlung_Heineken_B_1_Camera_3.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 310 signs, 44 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/L1_A_Erzahlung_Heineken_B_1_Camera_3.eaf.tmp
+0:00:16  L1_A_Erzahlung_Heineken_B_1_Camera_3
+Loading pose: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_Erzahlung_Tom-Jerry_1_Camera_2.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 463 signs, 23 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/L1_A_Erzahlung_Tom-Jerry_1_Camera_2.eaf.tmp
+0:00:21  L1_A_Erzahlung_Tom-Jerry_1_Camera_2
+Loading pose: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_Erzahlung_Tom-Jerry_1_Camera_3.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 158 signs, 22 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/L1_A_Erzahlung_Tom-Jerry_1_Camera_3.eaf.tmp
+0:00:22  L1_A_Erzahlung_Tom-Jerry_1_Camera_3
+/var/spool/slurmd/job7669789/slurm_script: line 127: 3679143 Killed                  pose_to_segments "${segment_args[@]}" "${video_args[@]}" --pose "$pose" --elan "$eaf.tmp"
+FAILED after 0:00:19: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_L1_B_Interaktion_Zukunft_GS_1_Camera_2.pose
+/var/spool/slurmd/job7669789/slurm_script: line 127: 3679856 Killed                  pose_to_segments "${segment_args[@]}" "${video_args[@]}" --pose "$pose" --elan "$eaf.tmp"
+FAILED after 0:00:22: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_L1_B_Interaktion_Zukunft_GS_1_Camera_3.pose
+/var/spool/slurmd/job7669789/slurm_script: line 127: 3681034 Killed                  pose_to_segments "${segment_args[@]}" "${video_args[@]}" --pose "$pose" --elan "$eaf.tmp"
+FAILED after 0:00:22: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_L1_B_Interaktion_invitro_1_Camera_2.pose
+InterGaze: 8 segmented, 0 already done, 3 failed, 0 without video
+Total time: 0:03:44
+Average per segmented pose file: 0:00:20
+[2026-10-26T18:03:17.978] error: Detected 3 oom_kill events in StepId=7669789.batch. Some of the step tasks have been OOM Killed.

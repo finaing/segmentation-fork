@@ -1,0 +1,10 @@
+SMILE2 (part 9 of 0-9): /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/ -> /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/
+video_to_pose --format mediapipe --workers 1, 8 at once
+2:47:51  SMILE2_H010_L2_M6_recording_pt1_interview_front.mp4  (50984 frames)
+3:29:06  SMILE2_H007_L2_M6_recording_interview_front.mp4  (61592 frames)
+5:54:58  SMILE2_H016_L1_M6_recording_pt2_front.mp4  (97273 frames)
+6:46:29  SMILE2_H013_L2_M12_recording_front.mp4  (112700 frames)
+6:48:59  SMILE2_H003_L2_M12_recording_front.mp4  (113562 frames)
+4:55:24  SMILE2_H018_L2_M24_recording_front.mp4  (112981 frames)
+7:59:10  SMILE2_H009_L2_M18_recording_front.mp4  (144690 frames)
+[2026-10-26T23:59:41.213] error: *** JOB 7669797 ON u24-chaihm0-633 CANCELLED AT 2026-10-26T23:59:41 DUE TO TIME LIMIT ***

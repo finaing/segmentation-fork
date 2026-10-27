@@ -1,0 +1,7 @@
+Noah David: /shares/sign-language.ebling.cl.uzh/Noah David/ELAN/ -> /shares/sign-language.ebling.cl.uzh/Noah David/ELAN/pose/
+video_to_pose --format mediapipe --workers 1, 8 at once
+0:37:30  David_und_Goliath.MP4  (34481 frames)
+0:40:04  Noah_und_die_Arche.MP4  (35977 frames)
+Noah David: 2 converted, 0 already done, 0 failed, 0 broken links
+Total time: 0:40:04
+Average per converted video: 0:38:47 (8 at once)

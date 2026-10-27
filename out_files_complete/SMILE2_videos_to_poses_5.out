@@ -1,0 +1,16 @@
+SMILE2 (part 5 of 0-9): /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/ -> /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/
+video_to_pose --format mediapipe --workers 1, 8 at once
+0:50:53  SMILE2_H011_L2_M6_recording_pt1_interview_front.mp4  (45682 frames)
+0:56:31  SMILE2_H008_L2_M6_recording_pt1_interview_front.mp4  (74120 frames)
+1:05:29  SMILE2_H003_L2_M6_recording_pt3_front.mp4  (61140 frames)
+1:20:42  SMILE2_H014_L2_M6_recording_pt1_front.mp4  (103970 frames)
+1:24:18  SMILE2_H007_L2_M12_recording_front.mp4  (107843 frames)
+1:30:21  SMILE2_H005_L2_M18_recording_front.mp4  (117087 frames)
+1:47:20  SMILE2_H002_L2_M24_recording_front.mp4  (148991 frames)
+1:53:46  SMILE2_H010_L2_M12_recording_front.mp4  (139713 frames)
+1:01:08  SMILE2_H026_L2_M6_recording_front.mp4  (106030 frames)
+1:44:47  SMILE2_H017_L2_M6_recording_pt2_front.mp4  (197187 frames)
+1:58:18  SMILE2_H021_L1_M6_recording_front.mp4  (230524 frames)
+SMILE2 (part 5 of 0-9): 11 converted, 0 already done, 0 failed, 0 broken links
+Total time: 2:54:51
+Average per converted video: 1:24:52 (8 at once)

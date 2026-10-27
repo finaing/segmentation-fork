@@ -1,0 +1,57 @@
+SRT-2: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/ -> /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I203_L1_S1.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 954 signs, 166 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/SMILE_SRT_I203_L1_S1.eaf.tmp
+0:01:24  SMILE_SRT_I203_L1_S1
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I219_L1_1_S1.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 662 signs, 109 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/SMILE_SRT_I219_L1_1_S1.eaf.tmp
+0:01:01  SMILE_SRT_I219_L1_1_S1
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I219_L1_2_S1.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 310 signs, 61 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/SMILE_SRT_I219_L1_2_S1.eaf.tmp
+0:00:24  SMILE_SRT_I219_L1_2_S1
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I224_L1_S1.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1054 signs, 217 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/SMILE_SRT_I224_L1_S1.eaf.tmp
+0:01:29  SMILE_SRT_I224_L1_S1
+/var/spool/slurmd/job7669751/slurm_script: line 127: 3770374 Killed                  pose_to_segments "${segment_args[@]}" "${video_args[@]}" --pose "$pose" --elan "$eaf.tmp"
+FAILED after 0:01:20: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I424_L1_S1_aligned.pose
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I807_L1_S1.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 731 signs, 112 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/SMILE_SRT_I807_L1_S1.eaf.tmp
+0:01:07  SMILE_SRT_I807_L1_S1
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I813_L1_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 703 signs, 200 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/SMILE_SRT_I813_L1_S1_aligned.eaf.tmp
+0:02:02  SMILE_SRT_I813_L1_S1_aligned
+/var/spool/slurmd/job7669751/slurm_script: line 127: 3788043 Killed                  pose_to_segments "${segment_args[@]}" "${video_args[@]}" --pose "$pose" --elan "$eaf.tmp"
+FAILED after 0:01:12: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I965_L1_S1_aligned.pose
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I966_L1_1_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 383 signs, 74 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/SMILE_SRT_I966_L1_1_S1_aligned.eaf.tmp
+0:01:31  SMILE_SRT_I966_L1_1_S1_aligned
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I966_L1_2_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 492 signs, 140 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/SMILE_SRT_I966_L1_2_S1_aligned.eaf.tmp
+0:01:21  SMILE_SRT_I966_L1_2_S1_aligned
+SRT-2: 8 segmented, 0 already done, 2 failed, 0 without video
+Total time: 0:12:51
+Average per segmented pose file: 0:01:17
+[2026-10-26T18:02:44.473] error: Detected 2 oom_kill events in StepId=7669751.batch. Some of the step tasks have been OOM Killed.

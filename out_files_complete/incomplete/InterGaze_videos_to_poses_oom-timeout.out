@@ -1,0 +1,40 @@
+InterGaze: /shares/sign-language.ebling.cl.uzh/ig/ELAN/ -> /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/
+video_to_pose --format mediapipe --workers 1, 8 at once
+0:27:49  L1_A_Erzahlung_Heineken_B_1_Camera_3.mp4  (11733 frames)
+0:28:07  L1_A_Erzahlung_Heineken_B_1_Camera_2.mp4  (11733 frames)
+0:30:03  L1_A_Erzahlung_Eiskonigin_1_Camera_2.mp4  (12802 frames)
+0:30:46  L1_A_Erzahlung_Eiskonigin_1_Camera_3.mp4  (12801 frames)
+0:38:47  L1_A_Erzahlung_Heineken_A_1_Camera_2.mp4  (15997 frames)
+0:38:49  L1_A_Erzahlung_Heineken_A_1_Camera_3.mp4  (15997 frames)
+0:38:51  L1_A_Erzahlung_Tom-Jerry_1_Camera_2.mp4  (16337 frames)
+0:39:34  L1_A_Erzahlung_Tom-Jerry_1_Camera_3.mp4  (16337 frames)
+/var/spool/slurmd/job7669788/slurm_script: line 182: 708332 Killed                  video_to_pose "${pose_args[@]}" -i "$video" -o "$pose.tmp" > "$log" 2>&1
+FAILED after 1:06:02: /shares/sign-language.ebling.cl.uzh/ig/ELAN/L1_A_L1_B_Interaktion_Schule_1_Camera_2.mp4
+    Loading video ...
+    Estimating pose ...
+    
+    
+    W0000 00:00:1793028423.444218  708440 landmark_projection_calculator.cc:186] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+    
+/var/spool/slurmd/job7669788/slurm_script: line 182: 709036 Killed                  video_to_pose "${pose_args[@]}" -i "$video" -o "$pose.tmp" > "$log" 2>&1
+FAILED after 1:14:30: /shares/sign-language.ebling.cl.uzh/ig/ELAN/L1_A_L1_B_Interaktion_Schule_1_Camera_3.mp4
+    Loading video ...
+    Estimating pose ...
+    
+    WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+    
+    W0000 00:00:1793028441.702431  709160 landmark_projection_calculator.cc:186] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+    
+/var/spool/slurmd/job7669788/slurm_script: line 182: 723255 Killed                  video_to_pose "${pose_args[@]}" -i "$video" -o "$pose.tmp" > "$log" 2>&1
+FAILED after 1:06:03: /shares/sign-language.ebling.cl.uzh/ig/ELAN/L1_A_L1_B_Interaktion_invitro_1_Camera_3.mp4
+    Loading video ...
+    Estimating pose ...
+    
+    
+    W0000 00:00:1793029083.530407  723565 landmark_projection_calculator.cc:186] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+    
+1:06:39  L1_A_L1_B_Interaktion_invitro_1_Camera_2.mp4  (25991 frames)
+1:15:58  L1_A_L1_B_Interaktion_Zukunft_GS_1_Camera_2.mp4  (29773 frames)
+1:15:40  L1_A_L1_B_Interaktion_Zukunft_GS_1_Camera_3.mp4  (29770 frames)
+[2026-10-26T17:59:29.024] error: *** JOB 7669788 ON u24-cva0000-209 CANCELLED AT 2026-10-26T17:59:29 DUE TO TIME LIMIT ***
+[2026-10-26T17:59:29.094] error: Detected 3 oom_kill events in StepId=7669788.batch. Some of the step tasks have been OOM Killed.

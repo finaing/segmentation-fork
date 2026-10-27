@@ -1,0 +1,58 @@
+SMILE_2018: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/ -> /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/auto_segmented/
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/SMILE_2018_968_L2_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 171 signs, 145 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/auto_segmented/SMILE_2018_968_L2_S1_aligned.eaf.tmp
+0:01:07  SMILE_2018_968_L2_S1_aligned
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/SMILE_2018_969_L2_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 175 signs, 129 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/auto_segmented/SMILE_2018_969_L2_S1_aligned.eaf.tmp
+0:00:56  SMILE_2018_969_L2_S1_aligned
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/SMILE_2018_970_L2_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 105 signs, 97 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/auto_segmented/SMILE_2018_970_L2_S1_aligned.eaf.tmp
+0:00:54  SMILE_2018_970_L2_S1_aligned
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/SMILE_2018_971_L2_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 186 signs, 146 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/auto_segmented/SMILE_2018_971_L2_S1_aligned.eaf.tmp
+0:00:56  SMILE_2018_971_L2_S1_aligned
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/SMILE_2018_972_L2_1_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 105 signs, 84 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/auto_segmented/SMILE_2018_972_L2_1_S1_aligned.eaf.tmp
+0:00:35  SMILE_2018_972_L2_1_S1_aligned
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/SMILE_2018_972_L2_2_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 151 signs, 130 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/auto_segmented/SMILE_2018_972_L2_2_S1_aligned.eaf.tmp
+0:00:40  SMILE_2018_972_L2_2_S1_aligned
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/SMILE_2018_973_L2_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 172 signs, 116 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/auto_segmented/SMILE_2018_973_L2_S1_aligned.eaf.tmp
+0:00:55  SMILE_2018_973_L2_S1_aligned
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/SMILE_2018_974_L2_1_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 155 signs, 134 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/auto_segmented/SMILE_2018_974_L2_1_S1_aligned.eaf.tmp
+0:00:51  SMILE_2018_974_L2_1_S1_aligned
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/SMILE_2018_974_L2_2_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 182 signs, 123 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE_2018/pose/auto_segmented/SMILE_2018_974_L2_2_S1_aligned.eaf.tmp
+0:00:54  SMILE_2018_974_L2_2_S1_aligned
+SMILE_2018: 9 segmented, 0 already done, 0 failed, 0 without video
+Total time: 0:07:48
+Average per segmented pose file: 0:00:52

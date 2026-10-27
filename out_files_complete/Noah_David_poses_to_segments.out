@@ -1,0 +1,16 @@
+Noah David: /shares/sign-language.ebling.cl.uzh/Noah David/ELAN/pose/ -> /shares/sign-language.ebling.cl.uzh/Noah David/ELAN/pose/auto_segmented/
+Loading pose: /shares/sign-language.ebling.cl.uzh/Noah David/ELAN/pose/David_und_Goliath.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1289 signs, 111 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Noah David/ELAN/pose/auto_segmented/David_und_Goliath.eaf.tmp
+0:00:50  David_und_Goliath
+Loading pose: /shares/sign-language.ebling.cl.uzh/Noah David/ELAN/pose/Noah_und_die_Arche.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1065 signs, 191 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Noah David/ELAN/pose/auto_segmented/Noah_und_die_Arche.eaf.tmp
+0:00:43  Noah_und_die_Arche
+Noah David: 2 segmented, 0 already done, 0 failed, 0 without video
+Total time: 0:01:34
+Average per segmented pose file: 0:00:46

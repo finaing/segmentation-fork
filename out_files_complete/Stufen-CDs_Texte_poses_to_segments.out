@@ -1,0 +1,178 @@
+Stufen-CDs_Texte: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/ -> /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_1a.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 64 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_1a.eaf.tmp
+0:00:16  S3_E_1a
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_1b.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 175 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_1b.eaf.tmp
+0:00:08  S3_E_1b
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_1c.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 296 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_1c.eaf.tmp
+0:00:11  S3_E_1c
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_1d.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 85 signs, 20 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_1d.eaf.tmp
+0:00:06  S3_E_1d
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_2a.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 67 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_2a.eaf.tmp
+0:00:06  S3_E_2a
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_2b.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 189 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_2b.eaf.tmp
+0:00:09  S3_E_2b
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_2c.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 187 signs, 5 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_2c.eaf.tmp
+0:00:09  S3_E_2c
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_2d.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 190 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_2d.eaf.tmp
+0:00:09  S3_E_2d
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_3a.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 153 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_3a.eaf.tmp
+0:00:08  S3_E_3a
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_3b.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 85 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_3b.eaf.tmp
+0:00:08  S3_E_3b
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_3c.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 139 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_3c.eaf.tmp
+0:00:08  S3_E_3c
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_3d.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 186 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_3d.eaf.tmp
+0:00:08  S3_E_3d
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_4a.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 170 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_4a.eaf.tmp
+0:00:08  S3_E_4a
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_4b.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 59 signs, 4 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_4b.eaf.tmp
+0:00:06  S3_E_4b
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_4c.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 168 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_4c.eaf.tmp
+0:00:09  S3_E_4c
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S3_E_4d.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 176 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S3_E_4d.eaf.tmp
+0:00:09  S3_E_4d
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_1a.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 261 signs, 6 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_1a.eaf.tmp
+0:00:10  S4_E_1a
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_1b.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 364 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_1b.eaf.tmp
+0:00:12  S4_E_1b
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_1d.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 232 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_1d.eaf.tmp
+0:00:08  S4_E_1d
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_2a.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 238 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_2a.eaf.tmp
+0:00:09  S4_E_2a
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_2b.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 349 signs, 4 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_2b.eaf.tmp
+0:00:11  S4_E_2b
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_2c.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 334 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_2c.eaf.tmp
+0:00:10  S4_E_2c
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_2d.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 243 signs, 7 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_2d.eaf.tmp
+0:00:10  S4_E_2d
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_3a.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 326 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_3a.eaf.tmp
+0:00:11  S4_E_3a
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_3b.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 244 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_3b.eaf.tmp
+0:00:09  S4_E_3b
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_3c.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 211 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_3c.eaf.tmp
+0:00:09  S4_E_3c
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_3d.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 223 signs, 5 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_3d.eaf.tmp
+0:00:10  S4_E_3d
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_4a.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 208 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_4a.eaf.tmp
+0:00:09  S4_E_4a
+Loading pose: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/S4_E_4b.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 261 signs, 6 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/stufen-cds/ELAN/pose/auto_segmented/S4_E_4b.eaf.tmp
+0:00:10  S4_E_4b
+Stufen-CDs_Texte: 29 segmented, 0 already done, 0 failed, 0 without video
+Total time: 0:04:27
+Average per segmented pose file: 0:00:09

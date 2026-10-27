@@ -1,0 +1,25 @@
+SMILE (part 1 of 0-1): /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE/ -> /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SMILE/pose/
+video_to_pose --format mediapipe --workers 1, 8 at once
+1:27:36  SMILE_I25_S1.mp4  (54054 frames)
+1:29:22  SMILE_I21_S1.mp4  (55245 frames)
+1:33:27  SMILE_I19_S1.mp4  (57696 frames)
+1:35:35  SMILE_I15_S1.mp4  (59240 frames)
+1:36:38  SMILE_I08_S1.mp4  (60156 frames)
+1:36:53  SMILE_I12_S1.mp4  (60342 frames)
+1:41:37  SMILE_I27_S1.mp4  (63421 frames)
+1:48:46  SMILE_I17_S1.mp4  (68267 frames)
+1:11:13  SMILE_I33_S1.mp4  (46682 frames)
+1:23:12  SMILE_I29_S1.mp4  (54965 frames)
+1:27:48  SMILE_I31_S1.mp4  (58984 frames)
+1:26:07  SMILE_I39_S1.mp4  (57967 frames)
+1:28:18  SMILE_I35_S1.mp4  (60027 frames)
+1:21:47  SMILE_I43_S1.mp4  (57982 frames)
+1:29:00  SMILE_I41_S1.mp4  (62562 frames)
+1:35:12  SMILE_I37_S1.mp4  (67929 frames)
+0:51:04  SMILE_I45_S1.mp4  (54336 frames)
+0:50:21  SMILE_I48_S1.mp4  (54551 frames)
+1:17:43  SMILE_I50_S1.mp4  (77627 frames)
+SMILE (part 1 of 0-1): 19 converted, 0 already done, 0 failed, 0 broken links
+0 videos skipped for their _aligned version
+Total time: 4:14:54
+Average per converted video: 1:25:52 (8 at once)

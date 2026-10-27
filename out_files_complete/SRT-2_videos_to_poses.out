@@ -1,0 +1,16 @@
+SRT-2: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/ -> /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/
+video_to_pose --format mediapipe --workers 1, 8 at once
+0:15:16  SMILE_SRT_I219_L1_2_S1.mp4  (10982 frames)
+0:44:30  SMILE_SRT_I807_L1_S1.mp4  (31346 frames)
+0:50:58  SMILE_SRT_I219_L1_1_S1.mp4  (36005 frames)
+1:05:10  SMILE_SRT_I203_L1_S1.mp4  (48149 frames)
+1:10:08  SMILE_SRT_I224_L1_S1.mp4  (54431 frames)
+1:00:48  SMILE_SRT_I966_L1_1_S1_aligned.mp4  (48275 frames)
+1:30:36  SMILE_SRT_I813_L1_S1_aligned.mp4  (75610 frames)
+0:47:35  SMILE_SRT_I966_L1_2_S1_aligned.mp4  (46035 frames)
+1:48:28  SMILE_SRT_I965_L1_S1_aligned.mp4  (89849 frames)
+1:50:41  SMILE_SRT_I424_L1_S1_aligned.mp4  (91591 frames)
+SRT-2: 10 converted, 0 already done, 0 failed, 0 broken links
+0 videos skipped for their _aligned version
+Total time: 1:50:41
+Average per converted video: 1:06:25 (8 at once)
