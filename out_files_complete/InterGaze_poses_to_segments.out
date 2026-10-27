@@ -1,0 +1,16 @@
+InterGaze: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/ -> /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/
+Loading pose: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_L1_B_Lunch_1_3_Camera_2.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 2092 signs, 286 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/L1_A_L1_B_Lunch_1_3_Camera_2.eaf.tmp
+0:01:48  L1_A_L1_B_Lunch_1_3_Camera_2
+Loading pose: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/L1_A_L1_B_Lunch_1_3_Camera_3.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1763 signs, 241 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/auto_segmented/L1_A_L1_B_Lunch_1_3_Camera_3.eaf.tmp
+0:01:41  L1_A_L1_B_Lunch_1_3_Camera_3
+InterGaze: 2 segmented, 22 already done, 0 failed, 0 without video
+Total time: 0:03:29
+Average per segmented pose file: 0:01:44

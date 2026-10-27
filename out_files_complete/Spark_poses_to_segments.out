@@ -1,0 +1,304 @@
+Spark: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/ -> /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_4_oVb_L2_DSGS_I891.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 112 signs, 61 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_4_oVb_L2_DSGS_I891.eaf.tmp
+0:00:18  SPARK_D_Aufg_4_oVb_L2_DSGS_I891
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_4_oVb_L2_DSGS_I892.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 203 signs, 31 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_4_oVb_L2_DSGS_I892.eaf.tmp
+0:00:09  SPARK_D_Aufg_4_oVb_L2_DSGS_I892
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_4_oVb_L2_DSGS_I940.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 187 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_4_oVb_L2_DSGS_I940.eaf.tmp
+0:00:07  SPARK_D_Aufg_4_oVb_L2_DSGS_I940
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5a_oVb_L2_DSGS_I889.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 125 signs, 5 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5a_oVb_L2_DSGS_I889.eaf.tmp
+0:00:06  SPARK_D_Aufg_5a_oVb_L2_DSGS_I889
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5a_oVb_L2_DSGS_I891.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 103 signs, 26 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5a_oVb_L2_DSGS_I891.eaf.tmp
+0:00:08  SPARK_D_Aufg_5a_oVb_L2_DSGS_I891
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5a_oVb_L2_DSGS_I892.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 145 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5a_oVb_L2_DSGS_I892.eaf.tmp
+0:00:08  SPARK_D_Aufg_5a_oVb_L2_DSGS_I892
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5a_oVb_L2_DSGS_I932.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 68 signs, 12 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5a_oVb_L2_DSGS_I932.eaf.tmp
+0:00:05  SPARK_D_Aufg_5a_oVb_L2_DSGS_I932
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5a_oVb_L2_DSGS_I940.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 132 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5a_oVb_L2_DSGS_I940.eaf.tmp
+0:00:07  SPARK_D_Aufg_5a_oVb_L2_DSGS_I940
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5b_oVb_L1_DSGS_I812.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 98 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5b_oVb_L1_DSGS_I812.eaf.tmp
+0:00:06  SPARK_D_Aufg_5b_oVb_L1_DSGS_I812
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5b_oVb_L1_DSGS_I942.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 171 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5b_oVb_L1_DSGS_I942.eaf.tmp
+0:00:06  SPARK_D_Aufg_5b_oVb_L1_DSGS_I942
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5b_oVb_L2_DSGS_I889.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 258 signs, 16 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5b_oVb_L2_DSGS_I889.eaf.tmp
+0:00:10  SPARK_D_Aufg_5b_oVb_L2_DSGS_I889
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5b_oVb_L2_DSGS_I891.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 53 signs, 16 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5b_oVb_L2_DSGS_I891.eaf.tmp
+0:00:06  SPARK_D_Aufg_5b_oVb_L2_DSGS_I891
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5b_oVb_L2_DSGS_I892.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 148 signs, 10 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5b_oVb_L2_DSGS_I892.eaf.tmp
+0:00:07  SPARK_D_Aufg_5b_oVb_L2_DSGS_I892
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5b_oVb_L2_DSGS_I932.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 71 signs, 10 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5b_oVb_L2_DSGS_I932.eaf.tmp
+0:00:07  SPARK_D_Aufg_5b_oVb_L2_DSGS_I932
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_5b_oVb_L2_DSGS_I940.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 232 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_5b_oVb_L2_DSGS_I940.eaf.tmp
+0:00:07  SPARK_D_Aufg_5b_oVb_L2_DSGS_I940
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_6_mVb_L1_DSGS_I812.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 38 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_6_mVb_L1_DSGS_I812.eaf.tmp
+0:00:05  SPARK_D_Aufg_6_mVb_L1_DSGS_I812
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_6_mVb_L1_DSGS_I942.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 63 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_6_mVb_L1_DSGS_I942.eaf.tmp
+0:00:05  SPARK_D_Aufg_6_mVb_L1_DSGS_I942
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_6_mVb_L2_DSGS_I889.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 200 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_6_mVb_L2_DSGS_I889.eaf.tmp
+0:00:08  SPARK_D_Aufg_6_mVb_L2_DSGS_I889
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_6_mVb_L2_DSGS_I891.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 36 signs, 6 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_6_mVb_L2_DSGS_I891.eaf.tmp
+0:00:06  SPARK_D_Aufg_6_mVb_L2_DSGS_I891
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_6_mVb_L2_DSGS_I892.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 226 signs, 53 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_6_mVb_L2_DSGS_I892.eaf.tmp
+0:00:10  SPARK_D_Aufg_6_mVb_L2_DSGS_I892
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_6_mVb_L2_DSGS_I932.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 80 signs, 10 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_6_mVb_L2_DSGS_I932.eaf.tmp
+0:00:06  SPARK_D_Aufg_6_mVb_L2_DSGS_I932
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_6_mVb_L2_DSGS_I940.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 267 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_6_mVb_L2_DSGS_I940.eaf.tmp
+0:00:08  SPARK_D_Aufg_6_mVb_L2_DSGS_I940
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_7_mVb_L1_DSGS_I812.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 36 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_7_mVb_L1_DSGS_I812.eaf.tmp
+0:00:04  SPARK_D_Aufg_7_mVb_L1_DSGS_I812
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_7_mVb_L1_DSGS_I942.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 102 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_7_mVb_L1_DSGS_I942.eaf.tmp
+0:00:06  SPARK_D_Aufg_7_mVb_L1_DSGS_I942
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_7_mVb_L2_DSGS_I889.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 136 signs, 10 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_7_mVb_L2_DSGS_I889.eaf.tmp
+0:00:07  SPARK_D_Aufg_7_mVb_L2_DSGS_I889
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_7_mVb_L2_DSGS_I891.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 73 signs, 19 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_7_mVb_L2_DSGS_I891.eaf.tmp
+0:00:06  SPARK_D_Aufg_7_mVb_L2_DSGS_I891
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_7_mVb_L2_DSGS_I892.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 150 signs, 4 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_7_mVb_L2_DSGS_I892.eaf.tmp
+0:00:08  SPARK_D_Aufg_7_mVb_L2_DSGS_I892
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_7_mVb_L2_DSGS_I932.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 108 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_7_mVb_L2_DSGS_I932.eaf.tmp
+0:00:07  SPARK_D_Aufg_7_mVb_L2_DSGS_I932
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_7_mVb_L2_DSGS_I940.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 301 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_7_mVb_L2_DSGS_I940.eaf.tmp
+0:00:08  SPARK_D_Aufg_7_mVb_L2_DSGS_I940
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_8_mVb_L1_DSGS_I812.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 67 signs, 3 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_8_mVb_L1_DSGS_I812.eaf.tmp
+0:00:06  SPARK_D_Aufg_8_mVb_L1_DSGS_I812
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_8_mVb_L1_DSGS_I942.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 90 signs, 4 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_8_mVb_L1_DSGS_I942.eaf.tmp
+0:00:05  SPARK_D_Aufg_8_mVb_L1_DSGS_I942
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_8_mVb_L2_DSGS_I889.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 163 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_8_mVb_L2_DSGS_I889.eaf.tmp
+0:00:07  SPARK_D_Aufg_8_mVb_L2_DSGS_I889
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_8_mVb_L2_DSGS_I891.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 61 signs, 18 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_8_mVb_L2_DSGS_I891.eaf.tmp
+0:00:07  SPARK_D_Aufg_8_mVb_L2_DSGS_I891
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_8_mVb_L2_DSGS_I892.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 158 signs, 19 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_8_mVb_L2_DSGS_I892.eaf.tmp
+0:00:08  SPARK_D_Aufg_8_mVb_L2_DSGS_I892
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_8_mVb_L2_DSGS_I932.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 96 signs, 22 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_8_mVb_L2_DSGS_I932.eaf.tmp
+0:00:07  SPARK_D_Aufg_8_mVb_L2_DSGS_I932
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_8_mVb_L2_DSGS_I940.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 173 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_8_mVb_L2_DSGS_I940.eaf.tmp
+0:00:06  SPARK_D_Aufg_8_mVb_L2_DSGS_I940
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_9_mVb_L1_DSGS_I812.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 113 signs, 4 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_9_mVb_L1_DSGS_I812.eaf.tmp
+0:00:07  SPARK_D_Aufg_9_mVb_L1_DSGS_I812
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_9_mVb_L1_DSGS_I942.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 110 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_9_mVb_L1_DSGS_I942.eaf.tmp
+0:00:06  SPARK_D_Aufg_9_mVb_L1_DSGS_I942
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_9_mVb_L2_DSGS_I889.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 143 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_9_mVb_L2_DSGS_I889.eaf.tmp
+0:00:07  SPARK_D_Aufg_9_mVb_L2_DSGS_I889
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_9_mVb_L2_DSGS_I891.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 99 signs, 54 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_9_mVb_L2_DSGS_I891.eaf.tmp
+0:00:10  SPARK_D_Aufg_9_mVb_L2_DSGS_I891
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_9_mVb_L2_DSGS_I892.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 262 signs, 53 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_9_mVb_L2_DSGS_I892.eaf.tmp
+0:00:11  SPARK_D_Aufg_9_mVb_L2_DSGS_I892
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_9_mVb_L2_DSGS_I932.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 176 signs, 13 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_9_mVb_L2_DSGS_I932.eaf.tmp
+0:00:09  SPARK_D_Aufg_9_mVb_L2_DSGS_I932
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Aufg_9_mVb_L2_DSGS_I940.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 192 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Aufg_9_mVb_L2_DSGS_I940.eaf.tmp
+0:00:07  SPARK_D_Aufg_9_mVb_L2_DSGS_I940
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Vorstellung_L1_DSGS_I812.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 28 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Vorstellung_L1_DSGS_I812.eaf.tmp
+0:00:05  SPARK_D_Vorstellung_L1_DSGS_I812
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Vorstellung_L1_DSGS_I942.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 65 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Vorstellung_L1_DSGS_I942.eaf.tmp
+0:00:05  SPARK_D_Vorstellung_L1_DSGS_I942
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Vorstellung_L2_DSGS_I889.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 25 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Vorstellung_L2_DSGS_I889.eaf.tmp
+0:00:05  SPARK_D_Vorstellung_L2_DSGS_I889
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Vorstellung_L2_DSGS_I891.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 28 signs, 13 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Vorstellung_L2_DSGS_I891.eaf.tmp
+0:00:05  SPARK_D_Vorstellung_L2_DSGS_I891
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Vorstellung_L2_DSGS_I892.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 50 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Vorstellung_L2_DSGS_I892.eaf.tmp
+0:00:05  SPARK_D_Vorstellung_L2_DSGS_I892
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Vorstellung_L2_DSGS_I932.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 20 signs, 2 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Vorstellung_L2_DSGS_I932.eaf.tmp
+0:00:05  SPARK_D_Vorstellung_L2_DSGS_I932
+Loading pose: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/SPARK_D_Vorstellung_L2_DSGS_I940.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 90 signs, 1 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/Spark/ELAN/pose/auto_segmented/SPARK_D_Vorstellung_L2_DSGS_I940.eaf.tmp
+0:00:05  SPARK_D_Vorstellung_L2_DSGS_I940
+Spark: 50 segmented, 308 already done, 0 failed, 0 without video
+Total time: 0:05:52
+Average per segmented pose file: 0:00:06

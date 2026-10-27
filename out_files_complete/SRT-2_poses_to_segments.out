@@ -1,0 +1,16 @@
+SRT-2: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/ -> /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I424_L1_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 951 signs, 259 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/SMILE_SRT_I424_L1_S1_aligned.eaf.tmp
+0:01:52  SMILE_SRT_I424_L1_S1_aligned
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/SMILE_SRT_I965_L1_S1_aligned.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 973 signs, 242 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE1/ELAN/SRT-2/pose/auto_segmented/SMILE_SRT_I965_L1_S1_aligned.eaf.tmp
+0:01:39  SMILE_SRT_I965_L1_S1_aligned
+SRT-2: 2 segmented, 8 already done, 0 failed, 0 without video
+Total time: 0:03:31
+Average per segmented pose file: 0:01:45

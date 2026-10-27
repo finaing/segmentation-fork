@@ -97,15 +97,28 @@ def main() -> int:
         print("No auto_segmented directories found", file=sys.stderr)
         return 1
 
-    rows = [[p, f"{n}", f"{s}", f"{g}"] for p, n, s, g, _ in results]
-    rows.append(["Total", *(f"{sum(r[i] for r in results)}" for i in (1, 2, 3))])
+    # Projects sharing a top-level share directory (the SMILE1 subprojects) get a
+    # subtotal row after the last of them
+    groups: dict[str, list[tuple]] = {}
+    for r in results:
+        groups.setdefault(share_paths[r[0]].strip("/").split("/")[0], []).append(r)
+    subtotals = {members[-1][0]: (f"{group} total", *(sum(m[i] for m in members) for i in (1, 2, 3, 4)))
+                 for group, members in groups.items() if len(members) > 1}
+    rows_with_subtotals = []
+    for r in results:
+        rows_with_subtotals.append(r)
+        if r[0] in subtotals:
+            rows_with_subtotals.append(subtotals[r[0]])
+
+    rows = [[p, f"{n:,}", f"{s:,}", f"{g:,}"] for p, n, s, g, _ in rows_with_subtotals]
+    rows.append(["Total", *(f"{sum(r[i] for r in results):,}" for i in (1, 2, 3))])
     print(table(["Project", "EAFs", "Sentences", "Signs"], rows))
 
     if args.out:
         with open(args.out, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
             writer.writerow(["project", "eafs", "sentences", "signs", "unparsable"])
-            writer.writerows(results)
+            writer.writerows([p, *(f"{n:,}" for n in counts)] for p, *counts in rows_with_subtotals)
     return 1 if any(r[4] for r in results) else 0
 
 

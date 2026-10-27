@@ -1,0 +1,148 @@
+SMILE2: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/ -> /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H004_L2_M18_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 2214 signs, 336 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H004_L2_M18_recording_front.eaf.tmp
+0:01:37  SMILE2_H004_L2_M18_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H004_L2_M24_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 2961 signs, 345 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H004_L2_M24_recording_front.eaf.tmp
+0:01:36  SMILE2_H004_L2_M24_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H006_L2_M12_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1255 signs, 271 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H006_L2_M12_recording_front.eaf.tmp
+0:01:18  SMILE2_H006_L2_M12_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H006_L2_M24_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1304 signs, 250 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H006_L2_M24_recording_front.eaf.tmp
+0:01:22  SMILE2_H006_L2_M24_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H007_L2_M24_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1329 signs, 257 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H007_L2_M24_recording_front.eaf.tmp
+0:01:06  SMILE2_H007_L2_M24_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H009_L2_M24_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 2057 signs, 288 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H009_L2_M24_recording_front.eaf.tmp
+0:01:23  SMILE2_H009_L2_M24_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H010_L2_M24_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1453 signs, 235 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H010_L2_M24_recording_front.eaf.tmp
+0:01:22  SMILE2_H010_L2_M24_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H012_L2_M6_recording_pt2_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 630 signs, 286 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H012_L2_M6_recording_pt2_front.eaf.tmp
+0:01:01  SMILE2_H012_L2_M6_recording_pt2_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H015_L2_M6_recording_interview_and_pt2_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1352 signs, 386 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H015_L2_M6_recording_interview_and_pt2_front.eaf.tmp
+0:01:27  SMILE2_H015_L2_M6_recording_interview_and_pt2_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H017_L2_M12_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 978 signs, 338 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H017_L2_M12_recording_front.eaf.tmp
+0:01:14  SMILE2_H017_L2_M12_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H017_L2_M18_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1249 signs, 307 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H017_L2_M18_recording_front.eaf.tmp
+0:01:12  SMILE2_H017_L2_M18_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H017_L2_M24_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 2205 signs, 578 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H017_L2_M24_recording_front.eaf.tmp
+0:01:49  SMILE2_H017_L2_M24_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H017_L2_M6_recording_pt2_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1295 signs, 465 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H017_L2_M6_recording_pt2_front.eaf.tmp
+0:01:23  SMILE2_H017_L2_M6_recording_pt2_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H018_L2_M18_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 662 signs, 101 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H018_L2_M18_recording_front.eaf.tmp
+0:00:50  SMILE2_H018_L2_M18_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H020_L1_M6_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1543 signs, 182 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H020_L1_M6_recording_front.eaf.tmp
+0:01:17  SMILE2_H020_L1_M6_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H021_L1_M6_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 2441 signs, 368 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H021_L1_M6_recording_front.eaf.tmp
+0:01:39  SMILE2_H021_L1_M6_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H023_L1_M6_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1358 signs, 273 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H023_L1_M6_recording_front.eaf.tmp
+0:01:18  SMILE2_H023_L1_M6_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H024_L1_M6_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1651 signs, 149 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H024_L1_M6_recording_front.eaf.tmp
+0:01:19  SMILE2_H024_L1_M6_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H025_L1_M6_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1699 signs, 267 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H025_L1_M6_recording_front.eaf.tmp
+0:01:28  SMILE2_H025_L1_M6_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H027_L1_M6_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1236 signs, 163 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H027_L1_M6_recording_front.eaf.tmp
+0:01:15  SMILE2_H027_L1_M6_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H028_L1_M6_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 3345 signs, 371 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H028_L1_M6_recording_front.eaf.tmp
+0:01:59  SMILE2_H028_L1_M6_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H029_L1_M6_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1783 signs, 233 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H029_L1_M6_recording_front.eaf.tmp
+0:01:39  SMILE2_H029_L1_M6_recording_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H030_L1_M6_recording_pt1_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 1833 signs, 242 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H030_L1_M6_recording_pt1_front.eaf.tmp
+0:01:08  SMILE2_H030_L1_M6_recording_pt1_front
+Loading pose: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/SMILE2_H034_L2_M12_recording_front.pose
+Loading model: /shares/iict-sp2.ebling.cl.uzh/common/ilex2elan/segmentation/sign_language_segmentation/dist/2026
+Running inference...
+Found 678 signs, 269 sentences
+Saving ELAN file: /shares/sign-language.ebling.cl.uzh/SMILE2/ELAN/pose/auto_segmented/SMILE2_H034_L2_M12_recording_front.eaf.tmp
+0:01:14  SMILE2_H034_L2_M12_recording_front
+SMILE2: 24 segmented, 91 already done, 0 failed, 0 without video
+Total time: 0:33:01
+Average per segmented pose file: 0:01:22

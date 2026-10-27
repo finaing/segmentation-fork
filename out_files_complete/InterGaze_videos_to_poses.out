@@ -1,0 +1,18 @@
+InterGaze: /shares/sign-language.ebling.cl.uzh/ig/ELAN/ -> /shares/sign-language.ebling.cl.uzh/ig/ELAN/pose/
+video_to_pose --format mediapipe --workers 1, 8 at once
+0:07:35  L1_B_Erzahlung_Heineken_A_1_Camera_2.mp4  (8037 frames)
+0:10:41  L1_B_Erzahlung_Eiskonigin_1_Camera_2.mp4  (11295 frames)
+0:10:46  L1_B_Erzahlung_Eiskonigin_1_Camera_3.mp4  (11296 frames)
+0:07:34  L1_B_Erzahlung_Heineken_A_1_Camera_3.mp4  (8037 frames)
+0:08:19  L1_B_Erzahlung_Heineken_B_1_Camera_2.mp4  (8986 frames)
+0:08:21  L1_B_Erzahlung_Heineken_B_1_Camera_3.mp4  (8984 frames)
+0:23:47  L1_A_L1_B_Interaktion_invitro_1_Camera_3.mp4  (25992 frames)
+0:16:09  L1_B_Erzahlung_Tom-Jerry_1_Camera_2.mp4  (20426 frames)
+0:15:34  L1_B_Erzahlung_Tom-Jerry_1_Camera_3.mp4  (20426 frames)
+0:43:47  L1_A_L1_B_Interaktion_Schule_1_Camera_2.mp4  (56011 frames)
+0:43:49  L1_A_L1_B_Interaktion_Schule_1_Camera_3.mp4  (56012 frames)
+1:33:18  L1_A_L1_B_Lunch_1_3_Camera_2.mp4  (101373 frames)
+1:33:46  L1_A_L1_B_Lunch_1_3_Camera_3.mp4  (101373 frames)
+InterGaze: 13 converted, 11 already done, 0 failed, 0 broken links
+Total time: 1:33:46
+Average per converted video: 0:29:29 (8 at once)
